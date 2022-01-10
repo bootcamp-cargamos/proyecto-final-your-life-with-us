@@ -1,0 +1,32 @@
+* {
+    background: white;
+}
+.scroll_horizontal {
+    height: 450px;
+	overflow: auto;
+	border: 1px solid #666;
+	background-color: #ccc;
+	padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+.navegador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
