@@ -3,7 +3,7 @@
     background: white;
 }
 .scroll_horizontal {
-    height: 450px;
+    height: 430px;
 	overflow: auto;
 	border: 1px solid #666;
 
@@ -19,6 +19,7 @@
     flex-wrap: nowrap;
     justify-content: center;
 }
+
 footer{
     display: flex;
     flex-direction: row;
