@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <title>Contactanos</title>
+    <title>YourLifeWithUs</title>
 </head>
 
 <body>
@@ -73,34 +73,45 @@
                         </li>
                     </ul>
                 </div>
+
                 <!--BUSCADOR-->
-                <div>
-                    <input type="text" placeholder="Buscar..." class="mx-2 rounded p-1 border border-4-secondary">
-                    <button class="btn btn-outline-secondary rounded " type="button">IR</button>
-                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-outline-secondary me-4" type="submit">Ir</button>
+                </form>
+
 
                 <!--LISTA DE ITEMS-->
-                <ul class="d-flex">
-                    <button id="btn_cart" class="btn btn-outline-dark">
-                        <span class="badge rounded-pill bg-secondary ms-1 mx-3">0</span>
-                        <i class="bi bi-cart3"></i>
+                <div class="d-flex ">
+                    <button id="btn_cart" class="btn btn-outline-secondary mx-4">
+                        <i class="bi bi-cart-fill"></i>
+                        <span class="badge rounded-pill bg-secondary ms-1">0</span>
                     </button>
-                </ul>
+                </div>
+
+                <!--INICIAR SESIÓN-->
+                <div class="d-flex">
+                <button class="btn btn-outline-secondary">
+                    <a href="#"></a>
+                    <i class="bi bi-person-fill"></i>
+                </button>
+                </div>
             </div>
         </nav>
-
-
-    <!-- HEADER -->
-
-    <header>
-        <div class="container h-100 mt-2">
-            <div class="d-flex h-100 flex-row align-items-center justify-content-md-center justify-content-sm-start">
-                <img src="../img/Logo.png" class="img-thumbnail me-4" alt="..." width="200" height="200">
-                <h1 class="display-2 mx-5">Your Life With Us</h1>
+    
+    
+        <!--HEADER-->
+        <header>
+            <div> 
+                <div class="d-flex h-100 flex-column align-items-center justify-content-center bg-info">
+                <!--Cabecera-->
+                
+                    <h1 class="display-3">YourLifeWithUs</h1>
+                    <p>Cuidando de ti y los tuyos.</p>
+                    <p>¿Buscas algo?...¡Nosotros lo tenemos!</p>
+                </div>
             </div>
-        </div>
-
-    </header>
+        </header>
 
     <!-- PAGINAS Y NUMEROS DE TELEFONO -->
     <section>
