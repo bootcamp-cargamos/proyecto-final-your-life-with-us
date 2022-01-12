@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/33806c60ba.js" crossorigin="anonymous"></script>
+    <title>YourLifeWithUs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container px-5">
+                <!--LOGO-->
+                <h5 class="">YourLifeWithUs</h5>
+                <a href="index.html" class="navbar-brand">
+                    <img src="/images/logo.png" alt="..." width="100">
+                </a>
+                <!--TOGGLER (BARRITAS MOBILE)-->
+                <button 
+                class="navbar-toggler" 
+                role="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar_menu"
+                aria-controls="navbar_menu"
+                aria-expanded="false"
+                aria-label="Toggle"
+                >
+                <span class="navbar-toggler-icon">
+    
+                </span>
+                </button>
+    
+                <!--MENU DE NAVEGACION-->
+                <div class="navbar-collapse collapse" id="navbar_menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a 
+                            href="#" 
+                            class="nav-link dropdown-toggle" 
+                            id="drop_products" 
+                            role="button"
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false"
+                            >Tienda</a>
+                            <ul class="dropdown-menu" aria-labelledby="drop_products">
+                                <li>
+                                    <a href="#" class="dropdown-item">Todos</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Medicamentos</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Remedios</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--BUSCADOR-->
+                <div>
+                    <input type="text" placeholder="Buscar..." class="mx-2 rounded p-1 border border-4-secondary">
+                    <button class="btn btn-outline-secondary rounded " type="button">IR</button>
+                </div>
+
+                <!--LISTA DE ITEMS-->
+                <ul class="d-flex">
+                    <button id="btn_cart" class="btn btn-outline-dark">
+                        <span class="badge rounded-pill bg-secondary ms-1 mx-3">0</span>
+                        <i class="bi bi-cart3"></i>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    
+    
+        <!--HEADER-->
+        <header>
+            <div> 
+                <div class="d-flex h-100 flex-column align-items-center justify-content-center bg-info">
+                <!--Cabecera-->
+                
+                    <h1 class="display-3">YourLifeWithUs</h1>
+                    <p>Cuidando de ti y los tuyos.</p>
+                    <p>¿Buscas algo?...¡Nosotros lo tenemos!</p>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!--CONTENIDO-->
+        <section class="py-5 me-3">
+            <div class="container">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="/images/tabcin.jpg" class="img-fluid rounded-start " alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder">Tabcin Extra Fuerte </h5>
+                      <br>
+                      <h5 class="card-text"> $5.00 </h5>
+                      <div class="d-flex text-warning small">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="px-2 text-dark">5 - Producto de buena calidad</span>
+                    </div>
+                    <p class="card-text"><b>Cantidad:</b> Caja (12 capsulas)</p>
+                    <br>
+                    <p class="card-text fw-bold">Descripción:</p>
+                    <p class="card-text">
+                        Producto de la compañia <b>Bayer</b>, que combate gripe y tos.
+                    </p>
+                    <p class="card-text">
+                        Contiene acetaminofen, que actua contra los sintomas:
+                    </p>
+                    <ul class="card-text">
+                        <li class="card-text">Dolor de cabeza y cuerpo</li>
+                        <li class="card-text">Fiebre</li>
+                        <li class="card-text">Tos</li>
+                        <li class="card-text">Congestion nasal</li>
+                        <li class="card-text">Dolor de cabeza</li>
+                    </ul>
+
+                      <p class="card-text"><b>Disponibilidad en stock:   </b>100</p>
+                      <br>
+                      <p class="card-text fw-bold">De:</p>
+                      <div class="card-text fw-light">
+                          <p>Bayer</p>
+                      <div></div>
+                      <p>Cantidad :
+                      <button type="button" class="btn btn-dark px-3"> + </button>
+                      <span class="badge rounded-pill bg-secondary ms-1 mx-2"> 0 </span>
+                      <button type="button" class="btn btn-dark px-3"> - </button> 
+                      </p>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-danger" type="button">Agregar al carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+    <!--PIE DE PAGINA-->
+    <footer class="bg-dark py-5">
+        <div class="container text-white">
+          <p class="text-center m-0">Copyright &copy; 2022</p>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
