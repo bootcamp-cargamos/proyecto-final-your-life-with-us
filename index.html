@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Farmacia</title>
+    <title>YourLifeWithUs</title>
   </head>
   <body>
         <!--NAVBAR-->
@@ -46,10 +46,10 @@
                 <div class="navbar-collapse collapse" id="navbar_menu">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link active">Inicio</a>
+                            <a href="#" class="nav-link active">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/nosotros.html" class="nav-link">Nosotros</a>
+                            <a href="#" class="nav-link">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a 
@@ -76,31 +76,51 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/contact.html" class="nav-link">Contactanos</a>
+                            <a href="#" class="nav-link">Contactanos</a>
                         </li>
                     </ul>
                 </div>
+
                 <!--BUSCADOR-->
-                <div>
-                    <input type="text" placeholder="Buscar..." class="mx-2 rounded p-1 border border-4-secondary">
-                    <button class="btn btn-outline-secondary rounded " type="button">IR</button>
-                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-outline-secondary me-4" type="submit">Ir</button>
+                </form>
+
 
                 <!--LISTA DE ITEMS-->
-                <ul class="d-flex">
-                    <button id="btn_cart" class="btn btn-outline-dark">
-                        <span class="badge rounded-pill bg-secondary ms-1 mx-3">0</span>
-                        <i class="bi bi-cart3"></i>
+                <div class="d-flex ">
+                    <button id="btn_cart" class="btn btn-outline-secondary mx-4">
+                        <i class="bi bi-cart-fill"></i>
+                        <span class="badge rounded-pill bg-secondary ms-1">0</span>
                     </button>
-                </ul>
+                </div>
+
+                <!--INICIAR SESIÓN-->
+                <div class="d-flex">
+                <button class="btn btn-outline-secondary">
+                    <a href="#"></a>
+                    <i class="bi bi-person-fill"></i>
+                </button>
+                </div>
             </div>
         </nav>
-    <header>
-        <div class="header m-4">
-            <img src="img/Logo.png" width="100" height="100">
-            <h1 class="mt-4">Your Life With Us</h1>
-        </div>
-    </header>
+    
+    
+        <!--HEADER-->
+        <header>
+            <div> 
+                <div class="d-flex h-100 flex-column align-items-center justify-content-center bg-info">
+                <!--Cabecera-->
+                
+                    <h1 class="display-3">YourLifeWithUs</h1>
+                    <p>Cuidando de ti y los tuyos.</p>
+                    <p>¿Buscas algo?...¡Nosotros lo tenemos!</p>
+                </div>
+            </div>
+        </header>
+
+        
     <header>
         <div>
             <h2 class="ms-4">Medicamentos Artificiales</h2>
