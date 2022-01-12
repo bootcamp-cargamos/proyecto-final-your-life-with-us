@@ -12,60 +12,82 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container px-2">
-            <a class="navbar-brand" href="#">
-                INICIO
-            </a>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container px-5">
+                <!--LOGO-->
+                <h5 class="">YourLifeWithUs</h5>
+                <a href="index.html" class="navbar-brand">
+                    <img src="/images/logo.png" alt="..." width="100">
+                </a>
+                <!--TOGGLER (BARRITAS MOBILE)-->
+                <button 
+                class="navbar-toggler" 
+                role="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar_menu"
+                aria-controls="navbar_menu"
+                aria-expanded="false"
+                aria-label="Toggle"
+                >
+                <span class="navbar-toggler-icon">
+    
+                </span>
+                </button>
+    
+                <!--MENU DE NAVEGACION-->
+                <div class="navbar-collapse collapse" id="navbar_menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a 
+                            href="#" 
+                            class="nav-link dropdown-toggle" 
+                            id="drop_products" 
+                            role="button"
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false"
+                            >Tienda</a>
+                            <ul class="dropdown-menu" aria-labelledby="drop_products">
+                                <li>
+                                    <a href="#" class="dropdown-item">Todos</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Medicamentos</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Remedios</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--BUSCADOR-->
+                <div>
+                    <input type="text" placeholder="Buscar..." class="mx-2 rounded p-1 border border-4-secondary">
+                    <button class="btn btn-outline-secondary rounded " type="button">IR</button>
+                </div>
 
-            <!-- TOGGLER (baritas para Mobile) -->
-            <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbar_menu"
-                aria-controls="navbar_menu" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- MENU DE NAVEGACION  -->
-            <div id="navbar_menu" class="navbar-collapse collapse">
-
-                <ul class="navbar-nav me-auto">
-                    <!-- Lista de items -->
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">PRODUCTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">COMPRA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTANOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">NOSOSTROS</a>
-                    </li>
-
+                <!--LISTA DE ITEMS-->
+                <ul class="d-flex">
+                    <button id="btn_cart" class="btn btn-outline-dark">
+                        <span class="badge rounded-pill bg-secondary ms-1 mx-3">0</span>
+                        <i class="bi bi-cart3"></i>
+                    </button>
                 </ul>
             </div>
-
-
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-            <div class="d-flex ">
-                <button id="btn_cart" class="btn btn-outline-dark">
-                    <i class="bi bi-cart-fill"></i>
-                    Cart
-                    <span class="badge rounded-pill bg-dark ms-1">
-                        0</span>
-                </button>
-            </div>
-
-            <div class="d-flex">
-                <button class="btn btn-outline-dark">
-                    <i class="bi bi-person-fill"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
 
     <!-- HEADER -->

@@ -19,115 +19,176 @@
     <title>Farmacia</title>
   </head>
   <body>
-    <!--NAVBAR-->
-    <nav
-      class="navbar navbar-expand-md navbar-light bg-light"
-    > 
-    <div class="container px-4">
-        <!--TOGGLER (Barritas Mobile)-->
-        <form action="../../form-result.php" method="post" target="_blank">
-              <input 
-              class=" form-control me-2" 
-              type="search" 
-              placeholder="Search">
-          </form>
-        <button
-          class="navbar-toggler"
-          role="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar_menu"
-          aria-controls="navbar_menu"
-          aria-expanded="false"
-        >
-          <span class="navbar-toggler-icon"> </span>
-          <div class="d-flex">
-            <div class="d-flex">
-                <button
-                  id="btn_cart"
-                  class="btn btn-outline-dark"
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container px-5">
+                <!--LOGO-->
+                <h5 class="">YourLifeWithUs</h5>
+                <a href="index.html" class="navbar-brand">
+                    <img src="/images/logo.png" alt="..." width="100">
+                </a>
+                <!--TOGGLER (BARRITAS MOBILE)-->
+                <button 
+                class="navbar-toggler" 
+                role="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar_menu"
+                aria-controls="navbar_menu"
+                aria-expanded="false"
+                aria-label="Toggle"
                 >
-                <i class="fas fa-user-circle"></i>
-                  User
+                <span class="navbar-toggler-icon">
+    
+                </span>
                 </button>
-            <button
-              id="btn_cart"
-              class="btn btn-outline-dark"
-            >
-            <i class="fas fa-shopping-cart"></i>
-              Cart
-              <span class="badge rounded-pill bg-dark ms-1">
-                0</span
-              >
-            </button>
-        </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+    
+                <!--MENU DE NAVEGACION-->
+                <div class="navbar-collapse collapse" id="navbar_menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/nosotros.html" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a 
+                            href="#" 
+                            class="nav-link dropdown-toggle" 
+                            id="drop_products" 
+                            role="button"
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false"
+                            >Tienda</a>
+                            <ul class="dropdown-menu" aria-labelledby="drop_products">
+                                <li>
+                                    <a href="#" class="dropdown-item">Todos</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Medicamentos</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Remedios</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/contact.html" class="nav-link">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--BUSCADOR-->
+                <div>
+                    <input type="text" placeholder="Buscar..." class="mx-2 rounded p-1 border border-4-secondary">
+                    <button class="btn btn-outline-secondary rounded " type="button">IR</button>
+                </div>
+
+                <!--LISTA DE ITEMS-->
+                <ul class="d-flex">
+                    <button id="btn_cart" class="btn btn-outline-dark">
+                        <span class="badge rounded-pill bg-secondary ms-1 mx-3">0</span>
+                        <i class="bi bi-cart3"></i>
+                    </button>
+                </ul>
+            </div>
+        </nav>
     <header>
-        <div class="header">
+        <div class="header m-4">
             <img src="img/Logo.png" width="100" height="100">
-            <h1>Your Life With Us</h1>
+            <h1 class="mt-4">Your Life With Us</h1>
         </div>
     </header>
     <header>
         <div>
             <h2>Medicamentos Artificiales</h2>
-            <div class="scroll_horizontal">
-                <div>
+            <div class="scroll_horizontal cards">
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
                     <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
                     <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
                     <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
                     <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">Más detalles</a>
                 </div>
-                <div>
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
-                </div>
-                <div>
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
-                </div>
-                <div>
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
-                </div>
-                <div>
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
-                </div>
-                <div>
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
-                </div>
+
         </div>
         <h2>Medicamentos Naturales</h2>
-        <div class="scroll_horizontal">
+        <div class="scroll_horizontal cards">
             <div>
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
