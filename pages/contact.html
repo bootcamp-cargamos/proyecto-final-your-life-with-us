@@ -5,66 +5,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/33806c60ba.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Contactanos</title>
 </head>
 
 <body>
-    <div id="nav">
-        <span>
-            <a href="#">INICIO</a>
-            <a href="#">PRODUCTOS</a>
-            <a href="#">COMPRA</a>
-            <a href="#">CONTACTANOS</a>
-            <a href="#">NOSOSTROS</a>
-            <a href="#">OFERTAS</a>
-        </span>
-        <input type="text" placeholder="Search" class="buscar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fas fa-user-circle"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container px-2">
+            <a class="navbar-brand" href="#">
+                INICIO
+            </a>
 
-    <div id="header">
-        <img src="images/logo.png" alt="" width="300" height="300">
-        <h1>Your Life With Us</h1>
-    </div>
+            <!-- TOGGLER (baritas para Mobile) -->
+            <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbar_menu"
+                aria-controls="navbar_menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- MENU DE NAVEGACION  -->
+            <div id="navbar_menu" class="navbar-collapse collapse">
 
-    <article>
+                <ul class="navbar-nav me-auto">
+                    <!-- Lista de items -->
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">COMPRA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTANOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NOSOSTROS</a>
+                    </li>
 
-        <h1>Contactanos</h1>
-        <img src="images/telefono.png" alt="" width="100" height="100">
-        <h3>12345678</h3>
-        <img src="images/whatsapp.png" alt="" width="100" height="100">
-        <h3>12345678</h3>
-        <img src="images/gmail-logo.png" alt="" width="100" height="100">
-        <h3>example@1234.com</h3>
-        <img src="images/Facebook-Logo-Square-768x768.png" alt="" width="100" height="100">
-        <h3>example@1234.com</h3>
-        <img src="images/twitter.png" alt="" width="100" height="100">
-        <h3>example@1234.com</h3>
+                </ul>
+            </div>
 
-    </article>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            <div class="d-flex ">
+                <button id="btn_cart" class="btn btn-outline-dark">
+                    <i class="bi bi-cart-fill"></i>
+                    Cart
+                    <span class="badge rounded-pill bg-dark ms-1">
+                        0</span>
+                </button>
+            </div>
+
+            <div class="d-flex">
+                <button class="btn btn-outline-dark">
+                    <i class="bi bi-person-fill"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="container h-100 mt-2">
+            <div class="d-flex h-100 flex-row align-items-center justify-content-md-center justify-content-sm-start">
+                <img src="../img/Logo.png" class="img-thumbnail me-4" alt="..." width="200" height="200">
+                <h1 class="display-2 mx-5">Your Life With Us</h1>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- PAGINAS Y NUMEROS DE TELEFONO -->
+    <section>
+        <div class="container mt-2  d-flex flex-column flex-md-row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <h3 class="display-4 ">CONTACTANOS</h3>
+                <div class="d-flex mt-2">
+                    <img src="../images/telefono.png" alt="..." width="80" height="80">
+                    <h3 class="align-self-center mx-5">12345678</h3>
+                </div>
+
+                <div class="d-flex mt-2">
+                    <img src="../images/whatsapp.png" alt="..." width="80" height="80">
+                    <h3 class="align-self-center mx-5">12345678</h3>
+                </div>
+
+                <div class="d-flex mt-2">
+                    <img src="../images/gmail-logo.png" alt="..." width="80" height="80">
+                    <h3 class="align-self-center mx-5">example@1234.com</h3>
+                </div>
+
+                <div class="d-flex mt-2">
+                    <img src="../images/Facebook-Logo-Square-768x768.png" alt="..." width="80" height="80">
+                    <h3 class="align-self-center mx-5">example@1234.com</h3>
+                </div>
+
+                <div class="d-flex mt-2">
+                    <img src="../images/twitter.png" alt="..." width="80" height="80">
+                    <h3 class="align-self-center mx-5">example@1234.com</h3>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-12 col-lg-6">
+                <h3 class="display-4 ">DANOS TU OPINION</h3>
+
+                <div class="d-flex">
+
+                    <form>
+                        <fieldset>
+                            <legend>Comentarios</legend>
+                            <p>la necesidad de explicaciones y las reparaciones es lo mejor que puede tener su página
+                            </p>
+                            <select name="" id="user_coment">
+                                <option>Permititr comentar a los visitantes</option>
+                                <option>Permititr comentar a los usuarios</option>
+                            </select>
+
+                            <p>la necesidad de explicaciones y las reparaciones es lo mejor que puede tener su página
+                            </p>
+                            <select name="" id="user_coment">
+                                <option>Permititr comentar a los visitantes</option>
+                                <option>Permititr comentar a los usuarios</option>
+                            </select>
+
+                            <button class="btn btn-outline-success" type="submit">Guardar cambios</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
 
     <aside>
         <fieldset>
-            <legend>Comentarios</legend>
-            <p>la necesidad de explicaciones y las reparaciones es lo mejor que puede tener su página</p>
-            <select name="" id="user_coment">
-                <option>Permititr comentar a los visitantes</option>
-                <option>Permititr comentar a los usuarios</option>
-            </select>
-            
-            <p>la necesidad de explicaciones y las reparaciones es lo mejor que puede tener su página</p>
-            <select name="" id="user_coment">
-                <option>Permititr comentar a los visitantes</option>
-                <option>Permititr comentar a los usuarios</option>
-            </select>
 
-            <button>Guardar cambios</button>
+
+
+
 
         </fieldset>
     </aside>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 
