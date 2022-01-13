@@ -30,3 +30,7 @@ footer{
     height: 80vh;
     
 }
+
+.bg-green{
+    background-color: rgb(47, 255, 99);
+}
