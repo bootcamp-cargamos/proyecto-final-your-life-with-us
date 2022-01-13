@@ -118,29 +118,57 @@
 
    <!--COMPRA-->
    <section
-     class="d-flex h-100 flex-row align-items-center mx-auto px-25 w-75"
+     class="d-flex align-items-center mx-auto w-75"
    >
      <div class="row">
        <div class="col-sm">
-         <fieldset>
-           <legend>Modo de compra</legend>
-           <label for=""> <input type="radio" />Comprar con mi cuenta </label>
+         <fieldset class="border border-1 p-3" >
+           <legend class="fs-4">Elige los datos para tu compra</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Datos de mi cuenta
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Otros datos
+            </label>
+          </div>
          </fieldset>
        </div>
      </div>
 
-     <div class="row col-6 mx-auto px-25 pb-20">
-       <fieldset>
-         <legend>Factura</legend>
-         <input type="text" placeholder="Nombres" />
-         <input type="text" placeholder="Apellidos" />
-         <input type="text" placeholder="Télefono" />
-         <input type="text" placeholder="Correo" />
-         <input type="text" placeholder="NIT" />
-         <input type="text" placeholder="Dirección" />
-
-         <button>Guardar cambios</button>
-       </fieldset>
+     <div class="row mx-auto">
+      <form action="/action_page.php">
+        <fieldset class="border border-1 m-3 p-3">
+         <legend class="fs-4">Ingresa tus datos</legend>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombres">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Telefono">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="NIT">
+            </div>
+            
+            
+          <div class="row mt-2">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellidos">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Correo Electronico">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Direccion">
+            </div>
+          </div>
+        </fieldset>
+       </form>
      </div>
    </section>
 
