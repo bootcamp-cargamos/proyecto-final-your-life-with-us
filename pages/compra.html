@@ -81,83 +81,65 @@
     </header>
 
     <section>
-        <div class="container mt-2  d-flex flex-column flex-md-row justify-content-center">
-            <div class="col-12 col-lg-6 ">
+        <div class="container mt-2  d-flex flex-column flex-md-row justify-content-sm-center">
+            <div class="col-12 col-lg-6 mt-4">
+
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
                         Comprar con mi cuenta
                     </label>
                 </div>
-                <div class="form-check">
+                <div class="form-check mt-2">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                     <label class="form-check-label" for="flexRadioDefault2">
                         Comprar como visitante
                     </label>
                 </div>
+
+                <div class="d-flex mt-4">
+                    <button id="btn_cart" class="btn btn-outline-dark">
+                        Productos
+                        <span class="badge rounded-pill bg-dark ms-1">
+                            0</span>
+                    </button>
+                    <div class="p-3 mx-2 bg-secondary text-white">
+                        Total a pagar
+                        <span>
+                            $ 0.00</span>
+                    </div>
+                    <button id="btn_cart" class="btn btn-outline-secondary">
+                        Confirmar Productos
+                    </button>
+
+                </div>
+
+
+
+
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="d-flex flex-column ">
+                    <h3>FACTURA</h3>
+                    <form>
+                        <input class="col-6 " type="text" placeholder="Nombre" required>
+                        <input class="col-5" type="number" placeholder="NIT" max="12">
+                        <input class="col-5" type="number" placeholder="Whatsapp" max="50" required>
+                        <input class="col-6" type="email" placeholder="Correo" required>
+                        <input class="form-control" type="text" placeholder="Dirección">
+                        <button id="btn_cart" class="btn btn-outline-secondary" type="submit">
+                            Confirmar Productos
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>
 
 
 
-    <form action="">
-        <span>
-            <fieldset>
-                <legend>Modo de compra</legend>
-                <label for="">
-                    <input type="radio">Comprar con mi cuenta
-                </label>
-            </fieldset>
-        </span>
 
-        <span>
-            <fieldset>
-                <legend>Factura</legend>
-                <input type="text" placeholder="Nombres">
-                <input type="text" placeholder="Apellidos">
-                <input type="text" placeholder="Télefono">
-                <input type="text" placeholder="Correo">
-                <input type="text" placeholder="NIT">
-                <input type="text" placeholder="Dirección">
-
-                <button>Guardar cambios</button>
-            </fieldset>
-        </span>
-
-        <span>
-            <fieldset>
-                <legend>Forma de pago</legend>
-                <label for=""> <input type="radio" name="pago">Pago con tarjeta</label>
-                <label for=""> <input type="radio" name="pago">Pago en efectivo</label>
-            </fieldset>
-        </span>
-
-        <div class="Productos">
-
-            <fieldset>
-                <legend>Tus Productos</legend>
-                <h3>Producto</h3>
-                <h3>Precio</h3>
-                <input type="button" value="Confirmar producto">
-            </fieldset>
-
-        </div>
-
-        <div id="entrega">
-
-            <h2>Métodos de entrega</h2>
-            <input type="button" value="Envío">
-            <input type="button" value="Recoger en sucursal">
-
-        </div>
-
-        <span>
-            <input type="button" value="Comprar">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </span>
-
-    </form>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

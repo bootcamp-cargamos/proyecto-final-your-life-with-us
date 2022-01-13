@@ -24,3 +24,9 @@ footer{
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
+
+#heig_80{
+    height: 80vh;
+    
+}
