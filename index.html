@@ -16,185 +16,251 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Farmacia</title>
+    <title>YourLifeWithUs</title>
   </head>
   <body>
-    <!--NAVBAR-->
-    <nav
-      class="navbar navbar-expand-md navbar-light bg-light"
-    > 
-    <div class="container px-4">
-        <!--TOGGLER (Barritas Mobile)-->
-        <form action="../../form-result.php" method="post" target="_blank">
-              <input 
-              class=" form-control me-2" 
-              type="search" 
-              placeholder="Search">
-          </form>
-        <button
-          class="navbar-toggler"
-          role="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar_menu"
-          aria-controls="navbar_menu"
-          aria-expanded="false"
-        >
-          <span class="navbar-toggler-icon"> </span>
-          <div class="d-flex">
-            <div class="d-flex">
-                <button
-                  id="btn_cart"
-                  class="btn btn-outline-dark"
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container px-5">
+                <!--LOGO-->
+                <a href="/index.html" class="navbar-brand">
+                    <h5 class="">YourLifeWithUs</h5>
+                  </a>
+                <a href="/index.html" class="navbar-brand">
+                    <img src="/images/logo.png" alt="..." width="100">
+                </a>
+                <!--TOGGLER (BARRITAS MOBILE)-->
+                <button 
+                class="navbar-toggler" 
+                role="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar_menu"
+                aria-controls="navbar_menu"
+                aria-expanded="false"
+                aria-label="Toggle"
                 >
-                <i class="fas fa-user-circle"></i>
-                  User
+                <span class="navbar-toggler-icon">
+                </span>
                 </button>
-            <button
-              id="btn_cart"
-              class="btn btn-outline-dark"
-            >
-            <i class="fas fa-shopping-cart"></i>
-              Cart
-              <span class="badge rounded-pill bg-dark ms-1">
-                0</span
-              >
-            </button>
-        </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <header>
-        <div class="header">
-            <img src="img/Logo.png" width="100" height="100">
-            <h1>Your Life With Us</h1>
-        </div>
-    </header>
-    <header>
+    
+                <!--MENU DE NAVEGACION-->
+                <div class="navbar-collapse collapse" id="navbar_menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="/index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/pages/nosotros.html" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a 
+                            href="#" 
+                            class="nav-link dropdown-toggle" 
+                            id="drop_products" 
+                            role="button"
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false"
+                            >Tienda</a>
+                            <ul class="dropdown-menu" aria-labelledby="drop_products">
+                                <li>
+                                    <a href="#" class="dropdown-item">Todos</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Medicamentos</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Remedios</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/pages/contact.html" class="nav-link">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--BUSCADOR-->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-outline-secondary me-4" type="submit">Ir</button>
+                </form>
+
+
+                <!--LISTA DE ITEMS-->
+                <div class="d-flex ">
+                    <a href="/pages/compra.html">
+                        <button id="btn_cart" class="btn btn-outline-secondary mx-4">
+                            <i class="bi bi-cart-fill"></i>
+                            <span class="badge rounded-pill bg-secondary ms-1">0</span>
+                        </button>
+                </a>
+                </div>
+
+                <!--INICIAR SESIÓN-->
+                <div class="d-flex">
+                <button class="btn btn-outline-secondary">
+                    <a href="#"></a>
+                    <i class="bi bi-person-fill"></i>
+                </button>
+                </div>
+            </div>
+        </nav>
+    
+    
+        <!--HEADER-->
+        <header>
+            <div> 
+                <div class="d-flex h-100 flex-column align-items-center justify-content-center bg-info">
+                <!--Cabecera-->
+                
+                    <h1 class="display-3">YourLifeWithUs</h1>
+                    <p>Cuidando de ti y los tuyos.</p>
+                    <p>¿Buscas algo?...¡Nosotros lo tenemos!</p>
+                </div>
+            </div>
+        </header>
+        <br><br>
+
+        
+    <section>
         <div>
-            <h2>Medicamentos Artificiales</h2>
-            <div class="scroll_horizontal">
-                <div>
+            <h2 class="ms-4">Medicamentos Artificiales</h2>
+            <div class="scroll_horizontal border border-1 mb-4">
+                <div class="me-3">
+                    <a href="pages/producto.html"><img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" /></a>
+                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+                </div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
-                <div>
+                <div class="me-3">
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/002/458/218/small/empty-syringes-barrel-in-the-small-glass-on-the-wooden-table-with-blured-medicine-bottle-background-free-photo.jpg" />
                     <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para expendio y uso industrial o clínico, y destinado para su utilización en personas</p>
-                    <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
                 </div>
+
         </div>
-        <h2>Medicamentos Naturales</h2>
-        <div class="scroll_horizontal">
-            <div>
+        <h2 class="ms-4">Medicamentos Naturales</h2>
+        <div class="scroll_horizontal border border-1 mb-4">
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
-            <div>
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
-            <div>
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
-            <div>
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
-            <div>
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
-            <div>
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
-            <div>
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
-            <div>
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
-            <div>
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
-            <div>
+            <div class="me-4">
                 <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
                 <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
-                <a href="http://127.0.0.1:5500/pages/producto.html" target="_blank">más detalles</a>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
             </div>
+            <div class="me-4">
+                <img src="https://www.oceano.com/oceano/catalogo/FotosGn/gro00214.jpg" />
+                <p>Son parte importante de la cultura, con sus prácticas y agentes, no solo se constituyen como un importante sector de atención informal de salud, además son eficientes.</p>
+                <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded" type="button">Más detalles</button></a>
+            </div>
+ 
         </div>
-    </header>
-    <footer>
-        <div>
-            <h3>Contactanos</h3>
-            <i class="fas fa-phone-square-alt"> +502 38053624</i>
-        </br>
-        </br>
-            <i class="far fa-envelope"> YourLifeWithUs@gmail.com</i>
+    </section>
+
+    <footer class="bg-dark pt-5">
+        <div class="container text-white d-flex flex-wrap justify-content-between">
+            <div>
+                <i class="bi bi-telephone fst-normal">+502 12345678</i> <br>
+                <i class="bi bi-envelope fst-normal "> yourlifewithus@gmail.com</i>
         </div>
-        <div>
-            <h3>Conoce más sobre:</h3>
-            <a href="pages/contact.html" target="_blank">Nuestos Contactos, reseñas y comentarios</a>
-        </br>
-        </br>
-            <a href="pages/nosotros.html" target="_blank">Nuestro personal y empresa</a>
+
+          <p class="text-center m-0">Copyright &copy; 2022</p>
+          <div>
+              <h5>Conoce más sobre:</h5>
+              <a href="pages/contact.html" target="_blank">Nuestos Contactos, reseñas y comentarios</a>
+            </br>
+        <a href="pages/nosotros.html" target="_blank">Nuestro personal y empresa</a></div>
         </div>
-    </footer>
+      </footer>
 </body>
 </html>
