@@ -1,352 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/33806c60ba.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/33806c60ba.js"
+      crossorigin="anonymous"
+    ></script>
     <title>YourLifeWithUs</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-<body>
-        <!--NAVBAR-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-            <div class="container px-5">
-                <!--LOGO-->
-                <a href="/index.html" class="navbar-brand">
-                    <h5 class="">YourLifeWithUs</h5>
-                  </a>
-                <a href="/index.html" class="navbar-brand">
-                    <img src="/images/logo.png" alt="..." width="100">
-                </a>
-                <!--TOGGLER (BARRITAS MOBILE)-->
-                <button 
-                class="navbar-toggler" 
-                role="button" 
-                data-bs-toggle="collapse"
-                data-bs-target="#navbar_menu"
-                aria-controls="navbar_menu"
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container px-5">
+        <!--LOGO-->
+        <a href="/index.html" class="navbar-brand">
+          <h5 class="">YourLifeWithUs</h5>
+        </a>
+        <a href="/index.html" class="navbar-brand">
+          <img src="/images/logo.png" alt="..." width="100" />
+        </a>
+        <!--TOGGLER (BARRITAS MOBILE)-->
+        <button
+          class="navbar-toggler"
+          role="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar_menu"
+          aria-controls="navbar_menu"
+          aria-expanded="false"
+          aria-label="Toggle"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <!--MENU DE NAVEGACION-->
+        <div class="navbar-collapse collapse" id="navbar_menu">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="/pages/nosotros.html" class="nav-link">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="drop_products"
+                role="button"
+                data-bs-toggle="dropdown"
                 aria-expanded="false"
-                aria-label="Toggle"
-                >
-                <span class="navbar-toggler-icon">
-                </span>
-                </button>
-    
-                <!--MENU DE NAVEGACION-->
-                <div class="navbar-collapse collapse" id="navbar_menu">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a href="/index.html" class="nav-link active">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/pages/nosotros.html" class="nav-link">Nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a 
-                            href="#" 
-                            class="nav-link dropdown-toggle" 
-                            id="drop_products" 
-                            role="button"
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false"
-                            >Tienda</a>
-                            <ul class="dropdown-menu" aria-labelledby="drop_products">
-                                <li>
-                                    <a href="#" class="dropdown-item">Todos</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Medicamentos</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Remedios</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/pages/contact.html" class="nav-link">Contactanos</a>
-                        </li>
-                    </ul>
+                >Tienda</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="drop_products">
+                <li>
+                  <a href="#" class="dropdown-item">Todos</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Medicamentos</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Remedios</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="/pages/contact.html" class="nav-link">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--BUSCADOR-->
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Buscar..."
+          />
+          <button class="btn btn-outline-secondary me-4" type="submit">
+            Ir
+          </button>
+        </form>
+
+        <!--LISTA DE ITEMS-->
+        <div class="d-flex">
+          <a href="/pages/compra.html">
+            <button id="btn_cart" class="btn btn-outline-secondary mx-4">
+              <i class="bi bi-cart-fill"></i>
+              <span class="badge rounded-pill bg-secondary ms-1">0</span>
+            </button>
+          </a>
+        </div>
+
+        <!--INICIAR SESIÓN-->
+        <div class="d-flex">
+          <button class="btn btn-outline-secondary">
+            <a href="#"></a>
+            <i class="bi bi-person-fill"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!--HEADER-->
+    <header>
+      <div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner" style="height: 50vh">
+            <div class="carousel-item active bg-dark">
+              <img
+                src="/images/carrousel/1.jpg"
+                class="d-block w-100"
+                alt="..."
+                style="opacity: 0.5"
+              />
+            </div>
+            <div class="carousel-item bg-dark">
+              <img
+                src="/images/carrousel/2.jpg"
+                class="d-block w-100"
+                alt="..."
+                style="opacity: 0.5"
+              />
+            </div>
+            <div class="carousel-item bg-dark">
+              <img
+                src="/images/carrousel/3.jpg"
+                class="d-block w-100"
+                alt="..."
+                style="opacity: 0.5"
+              />
+            </div>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-3 fw-bolder">YourLifeWithUs</h1>
+            <p class="fw-bold">Cuidando de ti y los tuyos.</p>
+            <p class="fw-bold">¿Buscas algo?...¡Nosotros lo tenemos!</p>
+            <p class="fw-bold">
+              ¿Tienes algun problema?...¡Encontraras la solución con nosotros!
+            </p>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--CONTENIDO-->
+    <main class="container pt-4 pb-4">
+      <h2 class="fw-bolder text-center py-3 pb-3">¿QUIENES SOMOS?</h2>
+      <div class="d-flex flex-row justify-content-between flex-nowrap">
+        <section class="card w-100 mb-5 h-100" style="max-width: 40%">
+          <h4 class="py-2 text-center">Nuestro personal:</h4>
+          <div class="card mb-3" style="max-width: 450px; margin: 0px 5%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/images/men/9.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bolder fst-italic">
+                    Angel Mazariegos
+                    <img
+                      src="/images/band_guate.jpg"
+                      alt="..."
+                      width="35"
+                      height="25"
+                      class="ms-3"
+                    />
+                  </h5>
+                  <p
+                    class="card-text d-flex justify-content-center fw-lighter text-end"
+                  >
+                    CEO - Director Ejecutivo
+                  </p>
+                  <p class="card-text text-end"><b>Edad: </b> 18 años.</p>
                 </div>
-
-                <!--BUSCADOR-->
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar...">
-                    <button class="btn btn-outline-secondary me-4" type="submit">Ir</button>
-                </form>
-
-
-                <!--LISTA DE ITEMS-->
-                <div class="d-flex ">
-                    <a href="/pages/compra.html">
-                        <button id="btn_cart" class="btn btn-outline-secondary mx-4">
-                            <i class="bi bi-cart-fill"></i>
-                            <span class="badge rounded-pill bg-secondary ms-1">0</span>
-                        </button>
-                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 450px; margin: 0px 5%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/images/women/26.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-center fw-bolder fst-italic"
+                  >
+                    Lourdes Catalán
+                    <img
+                      src="/images/band_guate.jpg"
+                      alt="..."
+                      width="35"
+                      height="25"
+                      class="ms-3"
+                    />
+                  </h5>
+                  <p
+                    class="card-text d-flex justify-content-center fw-lighter text-end"
+                  >
+                    COO - Responsable de Operaciones
+                  </p>
+                  <p class="card-text text-end"><b>Edad: </b> 24 años.</p>
                 </div>
-
-                <!--INICIAR SESIÓN-->
-                <div class="d-flex">
-                <button class="btn btn-outline-secondary">
-                    <a href="#"></a>
-                    <i class="bi bi-person-fill"></i>
-                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 450px; margin: 0px 5%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/images/men/8.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-center fw-bolder fst-italic"
+                  >
+                    Diego Santizo
+                    <img
+                      src="/images/band_guate.jpg"
+                      alt="..."
+                      width="35"
+                      height="25"
+                      class="ms-3"
+                    />
+                  </h5>
+                  <p
+                    class="card-text d-flex justify-content-center fw-lighter text-end"
+                  >
+                    CSO - Responsable de Ventas
+                  </p>
+                  <p class="card-text text-end"><b>Edad: </b> 21 años.</p>
                 </div>
+              </div>
             </div>
-        </nav>
-    
-    
-        <!--HEADER-->
-        <header>         
-            <div>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner" style="height: 50vh;">
-                          <div class="carousel-item active bg-dark">
-                            <img src="/images/carrousel/1.jpg" class="d-block w-100" alt="..." style="opacity: 0.50;">
-                          </div>
-                          <div class="carousel-item bg-dark">
-                            <img src="/images/carrousel/2.jpg" class="d-block w-100" alt="..." style="opacity: 0.50;">
-                          </div>
-                          <div class="carousel-item bg-dark">
-                            <img src="/images/carrousel/3.jpg" class="d-block w-100" alt="..." style="opacity: 0.50;">
-                          </div>
-                        </div>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="display-3 fw-bolder">YourLifeWithUs</h1>
-                            <p class="fw-bold">Cuidando de ti y los tuyos.</p>
-                            <p class="fw-bold">¿Buscas algo?...¡Nosotros lo tenemos!</p>
-                            <p class="fw-bold">¿Tienes algun problema?...¡Encontraras la solución con nosotros!</p>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-            </div>
-        </header>
-
-
-        <!--CONTENIDO-->
-        <main class="container pt-4 pb-4">
-            <h2 class="fw-bolder text-center py-3 pb-3">¿QUIENES SOMOS?</h2>
-            <div class="d-flex flex-row justify-content-between flex-nowrap">
-                <section class="card w-100 mb-5 h-100" style="max-width: 40%;">
-                        <h4 class="py-2 text-center">Nuestro personal: </h4>
-                        <div class="card mb-3" style="max-width: 450px; margin: 0px 5%;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="/images/men/9.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bolder fst-italic">Angel Mazariegos  
-                                    <img src="/images/band_guate.jpg" alt="..." width="35" height="25" class="ms-3"></h5>
-                                    <p class="card-text d-flex justify-content-center fw-lighter text-end">CEO - Director Ejecutivo</p>
-                                    <p class="card-text text-end"><b>Edad: </b> 18 años.</p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 450px; margin: 0px 5%;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="/images/women/26.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title d-flex justify-content-center fw-bolder fst-italic">Lourdes Catalán
-                                        <img src="/images/band_guate.jpg" alt="..." width="35" height="25" class="ms-3">
-                                    </h5>
-                                    <p class="card-text d-flex justify-content-center fw-lighter text-end">COO - Responsable de Operaciones</p>
-                                    <p class="card-text text-end"><b>Edad: </b> 24 años.</p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 450px; margin: 0px 5%;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="/images/men/8.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title d-flex justify-content-center fw-bolder fst-italic">Diego Santizo
-                                        <img src="/images/band_guate.jpg" alt="..." width="35" height="25" class="ms-3">
-                                    </h5>
-                                    <p class="card-text d-flex justify-content-center fw-lighter text-end">CSO - Responsable de Ventas</p>
-                                    <p class="card-text text-end"><b>Edad: </b> 21 años.</p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 450px; margin: 0px 5%;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="/images/men/11.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title d-flex justify-content-center fw-bolder fst-italic">Favio Raquec
-                                        <img src="/images/band_guate.jpg" alt="..." width="35" height="25" class="ms-3">
-                                    </h5>
-                                    <p class="card-text d-flex justify-content-center fw-lighter text-end">CMO - Director de Marketing</p>
-                                    <p class="card-text text-end"><b>Edad: </b> 25 años.</p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 450px; margin: 0px 5%;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="/images/women/58.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title d-flex justify-content-center fw-bolder fst-italic">Cecilia Alonzo
-                                        <img src="/images/band_guate.jpg" alt="..." width="35" height="25" class="ms-3">
-                                    </h5>
-                                    <p class="card-text d-flex justify-content-center fw-lighter text-end">CHRO - Directora de Recursos Humanos</p>
-                                    <p class="card-text text-end"><b>Edad: </b> 18 años.</p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 450px; margin: 0px 5%;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="/images/women/27.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title d-flex justify-content-center fw-bolder fst-italic">Ana Pestaña
-                                        <img src="/images/band_mex.gif" alt="..." width="35" height="25" class="ms-3">
-                                    </h5>
-                                    <p class="card-text d-flex justify-content-center fw-lighter text-end">CFO - Directora Financiera</p>
-                                    <p class="card-text text-end"><b>Edad: </b> 25 años.</p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <br>
-                </section>
-
-
-                <section class="card w-100 h-100" style="max-width: 55%;">
-                    <div class="container">
-                        <article>
-                            <h4 class="py-5 text-center">¿Que es "YourLifeWithUs"?</h4>
-                            <p class="px-5  fs-5 text">"YourLifeWithUs es una empresa totalmente innovadora, que busca ofrecerle los mejores precios al publico en el
-                                campo medicinal. El objetivo de YourLifeWithUs es revolucionar el mercado de la salud, y estamos seguros que lo logrará. "
-                            </p>
-                            <p class="fs-6 text fw-bold text-end px-3">Angel Mazariegos, CEO.</p>
-                            <br>
-                            <p class="px-3 pt-3">
-                                Durante los últimos años, la tecnología ha avanzado a pasos agigantados y ha permitido el crecimiento de cientos de
-                                industrias y negocios. La tecnología ha permitido que la sociedad evolucione y que encuentre facilidad de movimiento para 
-                                encontrar la solucion a cada problema que encuentre. Las facilidades que brinda el Internet y el marketing han logrado encontrar
-                                la manera de poder comprar lo que queramos, cuando queramos. A pesar de ello, existe una industria/necesidad que no ha sido abordada
-                                adecuadamente: La medicina/salud. 
-                            </p>
-                            <p class="px-3">
-                                YourLifeWithUs nació para cubrir esta necesidad social. La misión de YourLifeWithUs es ofrecer al consumidor los mejores productos
-                                del campo medicinal a los mejores precios, para llegar a ser la empresa #1 de venta de medicamentos a nivel latinoamericano.
-                            </p>
-                            <p class="px-3">
-                                Ademas de eso, YourLifeWithUs, ofrece un servicio de suscripción que le proporciona al usuario recetas de medicina natural o como se le conoce coloquialmente
-                                "remedios". El servicio de suscripción además de proporcionar este servicio, le da al suscriptor un descuento de 20% y tiempos
-                                de entrega más rápidos y flexibles. El monto por suscripción es bajo en comparación a las facilidades y beneficios que ofrece. 
-                            </p>
-                            <div class="d-flex flex-row justify-content-center">
-                                <img src="/images/logo.png" alt="..." width="200" height="200">
-
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
-            
-            <h2 class="fw-bolder text-center py-5 pb-3 mt-5">¿COMO FUNCIONA YOURLIFEWITHUS?</h2>
-            <div class="d-flex flex-row justify-content-center flex-nowrap mb-5">
-                <section class="card w-100" style="max-width: 80%;">
-                    <div class="container">
-                        <article>
-                            <h4 class="py-5 text-center">¿Cúal es nuestro metodo de envío?</h4>
-                            <p class="px-3 pt-3">
-                                El metodo de envío es una de las cosas que hacen a YourLifeWithUs distinto. A pesar de ser una
-                                empresa sin tienda fisica, contamos con colaboradores alrededor de los países en los que estamos
-                                disponibles.
-                            </p>
-                            <p class="px-3">
-                                El tiempo de entrega dependerá del país y de la ciudad en la que resides. El tiempo aproximado de
-                                entrega en las Capitales de los países en los que estamos es de 45 minutos, dependiendo de la hora y lugar.
-
-                            </p>
-                            <p class="px-3">
-                                Ahora bien, no tenemos restricciones al momento de hacer entregas fuera de las capitales. El tiempo de entrega
-                                varía entre 1 a 3 horas, dependiendo del lugar y horario en el que se haga la orden.
-                            </p>
-                            <p class="px-3">
-                                El monto por compra es de $2 en las capitales y ciudades aledañas, y el monto por entrega al resto de ciudades es de $4.
-                            </p>
-                            <div class="d-flex flex-row justify-content-center mb-3">
-                                <img src="/images/repartidor.png" alt="..." width="300" height="300">
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
-            <div class="d-flex flex-row justify-content-center flex-nowrap">
-                <div class="card mb-3 px-5 py-5 w-100">
-                    <p class="fw-bold pb-3">YourLifeWithUs esta disponible para:</p>
-                    <div class="d-flex justify-content-around">
-                        <img src="/images/band_guate.jpg" alt="..." width="200" height="125">
-                        <img src="/images/band_mex.gif" alt="..." width="200" height="125">
-                        <img src="/images/band_costa_rica.gif" alt="..." width="200" height="125">
-                        <img src="/images/band_el_salvador.png" alt="..." width="200" height="125">
-                    </div>
+          </div>
+          <div class="card mb-3" style="max-width: 450px; margin: 0px 5%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/images/men/11.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-center fw-bolder fst-italic"
+                  >
+                    Favio Raquec
+                    <img
+                      src="/images/band_guate.jpg"
+                      alt="..."
+                      width="35"
+                      height="25"
+                      class="ms-3"
+                    />
+                  </h5>
+                  <p
+                    class="card-text d-flex justify-content-center fw-lighter text-end"
+                  >
+                    CMO - Director de Marketing
+                  </p>
+                  <p class="card-text text-end"><b>Edad: </b> 25 años.</p>
                 </div>
+              </div>
             </div>
-            <div class="d-flex flex-row justify-content-center flex-nowrap">
-                <div class="card mb-3 px-5 py-5 w-100">
-                    <p class="fw-bold pb-3">Próximamente en:</p>
-                    <div class="d-flex justify-content-around">
-                        <img src="/images/band_panama.jpg" alt="..." width="200" height="125">
-                        <img src="/images/band_peru.gif" alt="..." width="200" height="125">
-                        <img src="/images/band_uruguay.gif" alt="..." width="200" height="125">
-                    </div>
+          </div>
+          <div class="card mb-3" style="max-width: 450px; margin: 0px 5%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/images/women/58.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-center fw-bolder fst-italic"
+                  >
+                    Cecilia Alonzo
+                    <img
+                      src="/images/band_guate.jpg"
+                      alt="..."
+                      width="35"
+                      height="25"
+                      class="ms-3"
+                    />
+                  </h5>
+                  <p
+                    class="card-text d-flex justify-content-center fw-lighter text-end"
+                  >
+                    CHRO - Directora de Recursos Humanos
+                  </p>
+                  <p class="card-text text-end"><b>Edad: </b> 18 años.</p>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="card mb-3" style="max-width: 450px; margin: 0px 5%">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/images/women/27.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-center fw-bolder fst-italic"
+                  >
+                    Ana Pestaña
+                    <img
+                      src="/images/band_mex.gif"
+                      alt="..."
+                      width="35"
+                      height="25"
+                      class="ms-3"
+                    />
+                  </h5>
+                  <p
+                    class="card-text d-flex justify-content-center fw-lighter text-end"
+                  >
+                    CFO - Directora Financiera
+                  </p>
+                  <p class="card-text text-end"><b>Edad: </b> 25 años.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+        </section>
 
-        </main>
+        <section class="card w-100 h-100" style="max-width: 55%">
+          <div class="container">
+            <article>
+              <h4 class="py-5 text-center">¿Que es "YourLifeWithUs"?</h4>
+              <p class="px-5 fs-5 text">
+                "YourLifeWithUs es una empresa totalmente innovadora, que busca
+                ofrecerle los mejores precios al publico en el campo medicinal.
+                El objetivo de YourLifeWithUs es revolucionar el mercado de la
+                salud, y estamos seguros que lo logrará. "
+              </p>
+              <p class="fs-6 text fw-bold text-end px-3">
+                Angel Mazariegos, CEO.
+              </p>
+              <br />
+              <p class="px-3 pt-3">
+                Durante los últimos años, la tecnología ha avanzado a pasos
+                agigantados y ha permitido el crecimiento de cientos de
+                industrias y negocios. La tecnología ha permitido que la
+                sociedad evolucione y que encuentre facilidad de movimiento para
+                encontrar la solucion a cada problema que encuentre. Las
+                facilidades que brinda el Internet y el marketing han logrado
+                encontrar la manera de poder comprar lo que queramos, cuando
+                queramos. A pesar de ello, existe una industria/necesidad que no
+                ha sido abordada adecuadamente: La medicina/salud.
+              </p>
+              <p class="px-3">
+                YourLifeWithUs nació para cubrir esta necesidad social. La
+                misión de YourLifeWithUs es ofrecer al consumidor los mejores
+                productos del campo medicinal a los mejores precios, para llegar
+                a ser la empresa #1 de venta de medicamentos a nivel
+                latinoamericano.
+              </p>
+              <p class="px-3">
+                Ademas de eso, YourLifeWithUs, ofrece un servicio de suscripción
+                que le proporciona al usuario recetas de medicina natural o como
+                se le conoce coloquialmente "remedios". El servicio de
+                suscripción además de proporcionar este servicio, le da al
+                suscriptor un descuento de 20% y tiempos de entrega más rápidos
+                y flexibles. El monto por suscripción es bajo en comparación a
+                las facilidades y beneficios que ofrece.
+              </p>
+              <div class="d-flex flex-row justify-content-center">
+                <img
+                  src="/images/logo.png"
+                  alt="..."
+                  width="200"
+                  height="200"
+                />
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
 
+      <h2 class="fw-bolder text-center py-5 pb-3 mt-5">
+        ¿COMO FUNCIONA YOURLIFEWITHUS?
+      </h2>
+      <div class="d-flex flex-row justify-content-center flex-nowrap mb-5">
+        <section class="card w-100" style="max-width: 80%">
+          <div class="container">
+            <article>
+              <h4 class="mt-4 text-center">
+                ¿Cúal es nuestro metodo de envío?
+              </h4>
+              <p class="px-3 pt-1">
+                El metodo de envío es una de las cosas que hacen a
+                YourLifeWithUs distinto. A pesar de ser una empresa sin tienda
+                fisica, contamos con colaboradores alrededor de los países en
+                los que estamos disponibles.
+              </p>
+              <p class="px-3">
+                -El tiempo de entrega dependerá del país y de la ciudad en la
+                que resides. El tiempo aproximado de entrega en las Capitales de
+                los países en los que estamos es de 45 minutos, dependiendo de
+                la hora y lugar.
+              </p>
+              <p class="px-3">
+                -Ahora bien, no tenemos restricciones al momento de hacer
+                entregas fuera de las capitales. El tiempo de entrega varía
+                entre 1 a 3 horas, dependiendo del lugar y horario en el que se
+                haga la orden.
+              </p>
+              <p class="px-3">
+                -El monto por compra es de $2 en las capitales y ciudades
+                aledañas, y el monto por entrega al resto de ciudades es de $4.
+              </p>
+              <div class="d-flex flex-row justify-content-center mb-3">
+                <img src="/images/repartidor.png" alt="..." width="200" />
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="card mb-3 px-5 py-5 w-100">
+          <p class="fw-bold pb-3">YourLifeWithUs esta disponible para:</p>
+          <div class="d-flex justify-content-around">
+            <img
+              src="/images/band_guate.jpg"
+              alt="..."
+              width="150"
+              height="100"
+              class="me-2"
+            />
+            <img
+              src="/images/band_mex.gif"
+              alt="..."
+              width="150"
+              height="100"
+              class="me-2"
+            />
+            <img
+              src="/images/band_costa_rica.gif"
+              alt="..."
+              width="150"
+              height="100"
+              class="me-2"
+            />
+            <img
+              src="/images/band_el_salvador.png"
+              alt="..."
+              width="150"
+              height="100"
+              class="me-2"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-center flex-nowrap">
+        <div class="card mb-3 px-5 py-5 w-100">
+          <p class="fw-bold pb-3">Próximamente en:</p>
+          <div class="d-flex justify-content-around">
+            <img
+              src="/images/band_panama.jpg"
+              alt="..."
+              width="150"
+              height="100"
+              class="me-2"
+            />
+            <img
+              src="/images/band_peru.gif"
+              alt="..."
+              width="150"
+              height="100"
+              class="me-2"
+            />
+            <img
+              src="/images/band_uruguay.gif"
+              alt="..."
+              width="150"
+              height="100"
+              class="me-2"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!--PIE DE PAGINA-->
     <footer class="bg-dark py-5">
-        <div class="container text-white">
-          <p class="text-center m-0">Copyright &copy; 2022</p>
-        </div>
-      </footer>
+      <div class="container text-white">
+        <p class="text-center m-0">Copyright &copy; 2022</p>
+      </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
