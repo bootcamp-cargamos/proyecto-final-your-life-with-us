@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
     <title>YourLifeWithUs</title>
 </head>
 
@@ -114,98 +120,156 @@
             </div>
         </header>
 
-    <!-- PAGINAS Y NUMEROS DE TELEFONO -->
-    <section>
-        <div class="container mt-2  d-flex flex-column flex-md-row justify-content-center">
-            <div class="col-12 col-lg-6">
-                <h3 class="display-4 ">CONTACTANOS</h3>
-                <div class="d-flex mt-2">
-                    <img src="../images/telefono.png" alt="..." width="80" height="80">
-                    <h3 class="align-self-center mx-5">12345678</h3>
-                </div>
+        <!--BUSCADOR-->
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Buscar..."
+          />
+          <button class="btn btn-outline-secondary me-4" type="submit">
+            Ir
+          </button>
+        </form>
 
-                <div class="d-flex mt-2">
-                    <img src="../images/whatsapp.png" alt="..." width="80" height="80">
-                    <h3 class="align-self-center mx-5">12345678</h3>
-                </div>
-
-                <div class="d-flex mt-2">
-                    <img src="../images/gmail-logo.png" alt="..." width="80" height="80">
-                    <h3 class="align-self-center mx-5">example@1234.com</h3>
-                </div>
-
-                <div class="d-flex mt-2">
-                    <img src="../images/Facebook-Logo-Square-768x768.png" alt="..." width="80" height="80">
-                    <h3 class="align-self-center mx-5">example@1234.com</h3>
-                </div>
-
-                <div class="d-flex mt-2">
-                    <img src="../images/twitter.png" alt="..." width="80" height="80">
-                    <h3 class="align-self-center mx-5">example@1234.com</h3>
-                </div>
-
-            </div>
-
-
-
-            <div class="col-12 col-lg-6">
-                <h3 class="display-4 ">DANOS TU OPINION</h3>
-
-                <div class="d-flex">
-
-                    <form>
-                        <fieldset>
-                            <legend>Comentarios</legend>
-                            <p>la necesidad de explicaciones y las reparaciones es lo mejor que puede tener su página
-                            </p>
-                            <select name="" id="user_coment">
-                                <option>Permititr comentar a los visitantes</option>
-                                <option>Permititr comentar a los usuarios</option>
-                            </select>
-
-                            <p>la necesidad de explicaciones y las reparaciones es lo mejor que puede tener su página
-                            </p>
-                            <select name="" id="user_coment">
-                                <option>Permititr comentar a los visitantes</option>
-                                <option>Permititr comentar a los usuarios</option>
-                            </select>
-
-                            <button class="btn btn-outline-success" type="submit">Guardar cambios</button>
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="d-flex mt-2">
-                    <h3 class="display-4 ">RESEÑAS</h3>
-                    <img src="../images/grafica.png" alt="..." width="400" height="400">
-                </div>
-
-            </div>
-
+        <!--LISTA DE ITEMS-->
+        <div class="d-flex">
+          <button id="btn_cart" class="btn btn-outline-secondary mx-4">
+            <i class="bi bi-cart-fill"></i>
+            <span class="badge rounded-pill bg-secondary ms-1">0</span>
+          </button>
         </div>
 
+        <!--INICIAR SESIÓN-->
+        <div class="d-flex">
+          <button class="btn btn-outline-secondary">
+            <a href="#"></a>
+            <i class="bi bi-person-fill"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
 
+    <!--HEADER-->
+    <header>
+      <div>
+        <div
+          class="d-flex h-100 flex-column align-items-center justify-content-center bg-info"
+        >
+          <!--Cabecera-->
+
+          <h1 class="display-3">YourLifeWithUs</h1>
+          <p>Cuidando de ti y los tuyos.</p>
+          <p>¿Buscas algo?...¡Nosotros lo tenemos!</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAGINAS Y NUMEROS DE TELEFONO -->
+    <section>
+      <div
+        class="container mt-2 d-flex flex-column flex-md-row justify-content-center"
+      >
+        <div class="col-12 col-lg-6">
+          <h3 class="display-4">CONTACTANOS</h3>
+          <div class="d-flex mt-2">
+            <img
+              src="../images/telefono.png"
+              alt="..."
+              width="80"
+              height="80"
+            />
+            <h3 class="align-self-center mx-5">12345678</h3>
+          </div>
+
+          <div class="d-flex mt-2">
+            <img
+              src="../images/whatsapp.png"
+              alt="..."
+              width="80"
+              height="80"
+            />
+            <h3 class="align-self-center mx-5">12345678</h3>
+          </div>
+
+          <div class="d-flex mt-2">
+            <img
+              src="../images/gmail-logo.png"
+              alt="..."
+              width="80"
+              height="80"
+            />
+            <h3 class="align-self-center mx-5">yourlifewithus@gmail.com</h3>
+          </div>
+
+          <div class="d-flex mt-2">
+            <img
+              src="../images/Facebook-Logo-Square-768x768.png"
+              alt="..."
+              width="80"
+              height="80"
+            />
+            <h3 class="align-self-center mx-5">YourLifeWithUs</h3>
+          </div>
+
+          <div class="d-flex mt-2">
+            <img src="../images/twitter.png" alt="..." width="80" height="80" />
+            <h3 class="align-self-center mx-5">@YLWU</h3>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <h3 class="display-4">DANOS TU OPINION</h3>
+
+          <div class="d-flex">
+            <form>
+              <fieldset>
+                <legend>Comentarios</legend>
+                <p>
+                  la necesidad de explicaciones y las reparaciones es lo mejor
+                  que puede tener su página
+                </p>
+                <select name="" id="user_coment">
+                  <option>Permititr comentar a los visitantes</option>
+                  <option>Permititr comentar a los usuarios</option>
+                </select>
+
+                <p>
+                  la necesidad de explicaciones y las reparaciones es lo mejor
+                  que puede tener su página
+                </p>
+                <select name="" id="user_coment">
+                  <option>Permititr comentar a los visitantes</option>
+                  <option>Permititr comentar a los usuarios</option>
+                </select>
+
+                <button class="btn btn-outline-success" type="submit">
+                  Guardar cambios
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <div class="d-flex mt-2">
+            <h3 class="display-4">RESEÑAS</h3>
+            <img
+              src="../images/grafica.png"
+              alt="..."
+              width="400"
+              height="400"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-
-
-
     <aside>
-        <fieldset>
-
-
-
-
-
-        </fieldset>
+      <fieldset></fieldset>
     </aside>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
