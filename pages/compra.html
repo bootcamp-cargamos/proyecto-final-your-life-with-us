@@ -116,62 +116,106 @@
             </div>
         </header>
 
-    <section>
-        <div class="container mt-2  d-flex flex-column flex-md-row justify-content-sm-center">
-            <div class="col-12 col-lg-6 mt-4">
+     <!--Caurousel de Imagenes-->
 
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Comprar con mi cuenta
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Comprar como visitante
-                    </label>
-                </div>
+     <div
+     id="carouselExampleControls"
+     class="carousel slide mt-3 mb-3"
+     data-bs-ride="carousel"
+   >
+     <div class="carousel-inner">
+       <div class="carousel-item active" data-bs-interval="3000">
+         <img src="../images/carrousel/1.jpg" width="500" class="d-block rounded mx-auto " alt="imagen1" />
+       </div>
 
-                <div class="d-flex mt-4">
-                    <button id="btn_cart" class="btn btn-outline-dark">
-                        Productos
-                        <span class="badge rounded-pill bg-dark ms-1">
-                            0</span>
-                    </button>
-                    <div class="p-3 mx-2 bg-secondary text-white">
-                        Total a pagar
-                        <span>
-                            $ 0.00</span>
-                    </div>
-                    <button id="btn_cart" class="btn btn-outline-secondary">
-                        Confirmar Productos
-                    </button>
+       <div class="carousel-item" data-bs-interval="3000">
+         <img src="../images/carrousel/2.jpg" height="300" class="d-block rounded mx-auto" alt="imagen2" />
+       </div>
 
-                </div>
+       <div class="carousel-item" data-bs-interval="3000">
+         <img src="../images/carrousel/3.jpg" height="300" class="d-block rounded mx-auto" alt="imagen3" />
+       </div>
+     </div>
+     <button
+       class="carousel-control-prev"
+       type="button"
+       data-bs-target="#carouselExampleControls"
+       data-bs-slide="prev"
+     >
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button
+       class="carousel-control-next"
+       type="button"
+       data-bs-target="#carouselExampleControls"
+       data-bs-slide="next"
+     >
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+   <!--COMPRA-->
+   <section
+     class="d-flex h-100 flex-row align-items-center mx-auto px-25 w-75"
+   >
+     <div class="row">
+       <div class="col-sm">
+         <fieldset>
+           <legend>Modo de compra</legend>
+           <label for=""> <input type="radio" />Comprar con mi cuenta </label>
+         </fieldset>
+       </div>
+     </div>
 
+     <div class="row col-6 mx-auto px-25 pb-20">
+       <fieldset>
+         <legend>Factura</legend>
+         <input type="text" placeholder="Nombres" />
+         <input type="text" placeholder="Apellidos" />
+         <input type="text" placeholder="Télefono" />
+         <input type="text" placeholder="Correo" />
+         <input type="text" placeholder="NIT" />
+         <input type="text" placeholder="Dirección" />
 
+         <button>Guardar cambios</button>
+       </fieldset>
+     </div>
+   </section>
 
+   <div class="Productos">
+     <fieldset class=" d-flex mx-auto px-25 pb-20 w-75 ">
+       <legend>Tus Productos</legend>
+       <h3>Producto</h3>
+       <h3>Precio</h3>
+       <input type="button" value="Confirmar producto" />
+     </fieldset>
+   </div>
 
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="d-flex flex-column ">
-                    <h3>FACTURA</h3>
-                    <form>
-                        <input class="col-6 " type="text" placeholder="Nombre" required>
-                        <input class="col-5" type="number" placeholder="NIT" max="12">
-                        <input class="col-5" type="number" placeholder="Whatsapp" max="50" required>
-                        <input class="col-6" type="email" placeholder="Correo" required>
-                        <input class="form-control" type="text" placeholder="Dirección">
-                        <button id="btn_cart" class="btn btn-outline-secondary" type="submit">
-                            Confirmar Productos
-                        </button>
-                    </form>
-                </div>
+   <span>
+     <fieldset class=" mx-auto px-25 w-75">
+       <legend>Forma de pago</legend>
+       <label for="">
+         <input type="radio" name="pago" />Pago con tarjeta</label
+       >
+       <label for="">
+         <input type="radio" name="pago" />Pago en efectivo</label
+       >
+     </fieldset>
+   </span>
 
-            </div>
-        </div>
-    </section>
+   <div class="  mx-auto px-25 w-75">
+     <h2>Métodos de entrega</h2>
+     <input type="button" value="Envío" />
+     <input type="button" value="Recoger en sucursal" />
+   </div>
+
+   <span>
+     <button type="button" class="btn btn-success  ">Comprar</button>
+   
+     <i class="fa-solid fa-cart-shopping"></i>
+   </span>
+ </form>
 
 
 
