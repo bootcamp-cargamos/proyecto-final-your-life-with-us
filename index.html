@@ -95,15 +95,88 @@
     <!--HEADER-->
     <header>
         <div>
-            <div class="d-flex h-100 flex-column align-items-center justify-content-center bg-info">
-                <!--Cabecera-->
-
-                <h1 class="display-3">YourLifeWithUs</h1>
-                <p>Cuidando de ti y los tuyos.</p>
-                <p>¿Buscas algo?...¡Nosotros lo tenemos!</p>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
+            <div class="carousel-inner" style="height: 50vh">
+              <div class="carousel-item active bg-dark">
+                <img
+                  src="/images/carrousel/1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  style="opacity: 0.5"
+                />
+              </div>
+              <div class="carousel-item bg-dark">
+                <img
+                  src="/images/carrousel/2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  style="opacity: 0.5"
+                />
+              </div>
+              <div class="carousel-item bg-dark">
+                <img
+                  src="/images/carrousel/3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  style="opacity: 0.5"
+                />
+              </div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-3 fw-bolder">YourLifeWithUs</h1>
+              <p class="fw-bold">Cuidando de ti y los tuyos.</p>
+              <p class="fw-bold">¿Buscas algo?...¡Nosotros lo tenemos!</p>
+              <p class="fw-bold">
+                ¿Tienes algun problema?...¡Encontraras la solución con nosotros!
+              </p>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-    </header>
+      </header>
     <br><br>
 
 
