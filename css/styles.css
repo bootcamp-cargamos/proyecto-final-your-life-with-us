@@ -13,7 +13,7 @@
     flex-wrap: nowrap;
 
 }
-.header{
+.section{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
