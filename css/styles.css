@@ -26,3 +26,13 @@ footer{
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
+
+#heig_80{
+    height: 80vh;
+    
+}
+
+.bg-green{
+    background-color: rgb(47, 255, 99);
+}
