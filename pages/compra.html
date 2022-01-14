@@ -102,111 +102,106 @@
                 </div>
             </div>
         </nav>
-    
-    
-        <!--HEADER-->
-        <header>
-            <div> 
-                <div class="d-flex h-100 flex-column align-items-center justify-content-center bg-info">
-                <!--Cabecera-->
-                
-                <h1 class="display-3 fw-bolder">YourLifeWithUs</h1>
-                <p class="fw-bold">Cuidando de ti y los tuyos.</p>
-                <p class="fw-bold">¿Buscas algo?...¡Nosotros lo tenemos!</p>
-                <p class="fw-bold">
-                  ¿Tienes algun problema?...¡Encontraras la solución con nosotros!
-                </p>
-                </div>
-            </div>
-        </header>
 
    <!--COMPRA-->
-   <section
-     class="d-flex align-items-center mx-auto w-75"
-   >
-     <div class="row">
-       <div class="col-sm">
-           <legend class="fs-4">Elige los datos para tu compra</legend>
+   <div class="container mt-3 border border-1">
+    <div class="row ">
+
+      <div class="col col-lg-6 border-end text-center">
+        <strong>Producto</strong>
+      </div>
+      <div class="col text-center">
+        <strong>Modelo</strong>
+      </div>
+      <div class="col text-center">
+        <strong>Cantidad</strong>
+      </div>
+      <div class="col text-center">
+        <strong>Precio</strong>
+      </div>
+      <div class="col text-center">
+        <strong>Total</strong>
+      </div>
+    </div>
+    </div>
+   <div class="container border border-1 mb-5">
+    <div class="row ">
+      <div class="col col-lg-2  border-end ">
+        <img src="/images/tabcin.jpg" alt="" width="59" class="ms-4">
+      </div>
+      <div class="col col-lg-3 text-center border-end">
+        2 of 2
+      </div>
+      <div class="col text-end">
+        2 of 2
+      </div>
+      <div class="col text-end">
+        2 of 2
+      </div>
+      <div class="col text-end">
+        2 of 2
+      </div>
+      <div class="col text-end">
+        2 of 2
+      </div>
+    </div>
+    </div>
+    <br>
+   <div class="container border border-1">
+
+
+
+    <div class="row">
+      <form class="col  p-3 ms-3">
+        <div class="form-check">
+          <p class="fs-5">Elige los datos de tu compra</p>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Datos de cuenta
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Otros
+          </label>
+        </div>
+      </form>
+      <div class="col  p-3 ms-3">
+        <form method="post" class="col">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Datos de mi cuenta
+            <p class="fs-5">Elige el método de pago</p>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Pago con tarjeta
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Otros datos
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+            <label class="form-check-label" for="flexRadioDefault4">
+              Pago en efectivo (en la entrega)
             </label>
           </div>
-       </div>
-     </div>
-
-     <div class="row mx-auto">
-      <form action="/action_page.php">
-        <fieldset class="border border-1 m-3 p-3">
-         <legend class="fs-4">Ingresa tus datos</legend>
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Nombres">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Telefono">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="NIT">
-            </div>
-            
-            
-          <div class="row mt-2">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Apellidos">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Correo Electronico">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Direccion">
-            </div>
+        </form>
+      </div>
+      <div class="col p-3 ms-3">
+        <form method="post" class="col">
+          <div class="form-check">
+            <p class="fs-5">Elige el método de entrega</p>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Envio a domicilio
+            </label>
           </div>
-        </fieldset>
-       </form>
-     </div>
-   </section>
-
-   <div class="Productos">
-     <fieldset class=" d-flex mx-auto px-25 pb-20 w-75 ">
-       <legend>Tus Productos</legend>
-       <h3>Producto</h3>
-       <h3>Precio</h3>
-       <input type="button" value="Confirmar producto" />
-     </fieldset>
-   </div>
-
-   <span>
-     <fieldset class=" mx-auto px-25 w-75">
-       <legend>Forma de pago</legend>
-       <label for="">
-         <input type="radio" name="pago" />Pago con tarjeta</label
-       >
-       <label for="">
-         <input type="radio" name="pago" />Pago en efectivo</label
-       >
-     </fieldset>
-   </span>
-
-   <div class="  mx-auto px-25 w-75">
-     <h2>Métodos de entrega</h2>
-     <input type="button" value="Envío" />
-     <input type="button" value="Recoger en sucursal" />
-   </div>
-
-   <span>
-     <button type="button" class="btn btn-success  ">Comprar</button>
-   
-     <i class="fa-solid fa-cart-shopping"></i>
-   </span>
- </form>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+            <label class="form-check-label" for="flexRadioDefault6">
+              Recoger en sucursal
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
 
 
 
