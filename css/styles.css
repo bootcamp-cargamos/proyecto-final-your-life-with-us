@@ -2,6 +2,7 @@
 .cards {
   background: white;
 }
+
 .scroll_horizontal {
   height: 430px;
   overflow: auto;
