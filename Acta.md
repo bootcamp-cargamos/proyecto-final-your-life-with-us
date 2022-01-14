@@ -1,0 +1,1 @@
+Como capitán de equipo doy fe que todos los integrantes trabajaron en las tareas asignadas, en cuanto a la cantidad de commits por cada integrante se puede ver una diferencia sin embargo no
