@@ -2,9 +2,7 @@ import CLIENT from "";
 import STORAGE from "../utils/storage.js";
 
 export default Vue.component("Registro", {
-  /* {
-    messaje: "Crear cuenta"
-  }, */
+
   data: function () {
     return {
       email: "",
@@ -14,12 +12,11 @@ export default Vue.component("Registro", {
   },
   methods: {
     goLogin() {
-      this.$router.push("/"); //retorna al login en caso de no registrarse
+      this.$router.push("/"); 
     },
     DoSingnUp: async function () {
       let vm = this;
       try {
-        //Enviamos la petición Via POST
         const response = await CLIENT.post(
           "",
           {
@@ -28,13 +25,9 @@ export default Vue.component("Registro", {
             password: this.password,
           }
         );
-        // Almacenamos el token
         STORAGE.push("token", response.token);
-        // Redirigimos al usuario al home
         vm.$router.push("/");
       } catch (e) {
-        //En caso haya un error en el inicio de sesión
-        // Notificamos por consola el incidente
         console.warn(e);
         alert("No se ha podido registrar su cuenta");
       }
