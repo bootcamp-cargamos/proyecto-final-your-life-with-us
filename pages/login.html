@@ -105,33 +105,33 @@
                 <p> Gracias por elegirnos</p>
             </div>
         </div>
-
-
         <div class="container mt-5">
             <div class="d-flex flex-row justify-content-center">
                 <form>
-                    <input type="email" class="form-control mb-3" id="exampleInputEmail1" placeholder="@mail.com"
+                    <input type="email" class="form-control mb-3" id="username" v-model="username" placeholder="@mail.com"
                         aria-describedby="emailHelp" style="width: 500px;" required>
-                    <input type="password" class="form-control mb-3" id="exampleInputPassword1" placeholder="Contraseña" required>
+                    <input type="password" class="form-control mb-3" id="password" v-model="password" placeholder="Contraseña" required>
                     <a href="#">                    
                         <p class="form-text">¿Olvidaste tu contraseña?</p>
                     </a>
-    
-                    <div class="mb-3 mt-5 form-check">
-                        <input type="checkbox" class="form-check-input mb-3 form-check" id="exampleCheck1">
-                        <label class="form-check-label mx-3" for="exampleCheck1">Recordarme cuando inicie sesión</label>
-                    </div>
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-primary mt-2" type="button">Ingresar</button>
-                    </div>
+
+                    <button
+                        type="submit"
+                        class="my-4 py-3 btn btn-primary fw-bold col-12"
+                        @click.prevent="DoLogin"
+                    >
+                        INICIAR SESION
+                    </button>
                     <hr>
                     <div class="form-text">Al registrame acepto los terminos y condiciones del servicio.</div>
                     <br>
                     <br>
                     <br>
-                    <a href="/pages/registro.html">
-                        <p class="form-text">¿No tienes una cuenta?...¡Registrate!</p>
-                    </a>
+                    <div class="col-12 text-center">
+                        ¿Aun no tienes una cuenta?
+                        </br>
+                        <a href="./registro.html" @click.prevent="goRegister" class="ms-2 text-dark fw-bold">REGÍSTRATE AHORA</a>
+                    </div>
                 </form>
             </div>
         </div>
