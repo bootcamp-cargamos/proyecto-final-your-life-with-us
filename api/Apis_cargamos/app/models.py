@@ -1,7 +1,7 @@
 from app import db
 
 class orders(db.Model):
-    __tablename__='orders_'
+    # __tablename__='orders_'
 
     id=db.Column(db.Integer,primary_key=True)
     id_prod_rel=db.relationship('orders_')
