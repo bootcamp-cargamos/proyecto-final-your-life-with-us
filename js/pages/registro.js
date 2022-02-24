@@ -43,7 +43,7 @@ export default Vue.component("Registro", {
         <section class="py-2 me-3">
             <div class="container">
               <div class="card mb-3">
-                <div class="text-center mb-5">                        
+                <div class="text-center mb-5">
                     <p class="h3 fw-bold text-center mt-5 m">Registrate</p>
                     <p>Forma parte de YourLifeWithUs. Al registrarte podrás hacer compras de los mejores productos a los mejores precios.</p>
                 </div>
@@ -60,7 +60,6 @@ export default Vue.component("Registro", {
                         <div class="col-md-6 mt-2" style="width: 430px;">
                           <label for="password">Contraseña</label>
                           <input type="password" class="form-control" id="password" v-model="password" placeholder="Contraseña" required>
-                          
                         </div>
 
                         <div class="col-12 d-flex justify-content-center mt-4 mb-5">
@@ -72,5 +71,7 @@ export default Vue.component("Registro", {
               </div>
             </div>
           </section>
+          <div class="px-5 mx-5">
+          </div>
     `,
 });
