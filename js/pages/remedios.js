@@ -14,6 +14,9 @@ export default Vue.component("remedios", {
     goLogin() {
       this.$router.push("/");
     },
+    goProducto() {
+      this.$router.push("/producto");
+    },
     DoSingnUp: async function () {
       let vm = this;
       try {
@@ -70,7 +73,7 @@ export default Vue.component("remedios", {
 
                             <div class="card-footer border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a href="/pages/producto.html">
+                                    <a @click="goProducto">
                                       <button class="btn btn-outline-dark">Más detalles</button>
                                     </a>
                                 </div>
@@ -97,7 +100,7 @@ export default Vue.component("remedios", {
   
                               <div class="card-footer border-top-0 bg-transparent">
                                   <div class="text-center">
-                                    <a href="/pages/producto.html">
+                                    <a @click="goProducto">
                                       <button class="btn btn-outline-dark">Más detalles</button>
                                     </a>
                                   </div>
@@ -124,7 +127,7 @@ export default Vue.component("remedios", {
   
                               <div class="card-footer border-top-0 bg-transparent">
                                   <div class="text-center">
-                                    <a href="/pages/producto.html">
+                                    <a @click="goProducto">
                                       <button class="btn btn-outline-dark">Más detalles</button>
                                     </a>
                                   </div>
@@ -151,7 +154,7 @@ export default Vue.component("remedios", {
   
                               <div class="card-footer border-top-0 bg-transparent">
                                   <div class="text-center">
-                                    <a href="/pages/producto.html">
+                                    <a @click="goProducto">
                                       <button class="btn btn-outline-dark">Más detalles</button>
                                     </a>
                                   </div>

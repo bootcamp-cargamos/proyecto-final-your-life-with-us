@@ -29,6 +29,9 @@ export default Vue.component("navbar", {
     goRemedios() {
       this.$router.push("/remedios");
     },
+    goProducto() {
+      this.$router.push("/producto");
+    },
     logout() {
       STORAGE.remove("token");
       this.$router.push("/");

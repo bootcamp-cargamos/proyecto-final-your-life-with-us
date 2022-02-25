@@ -5,7 +5,9 @@ import Contacto from "./pages/contacto.js";
 import Navbar from "./components/navbar.js";
 import carrito from "./pages/carrito.js";
 import medicinas from "./pages/medicinas.js";
-import medicinas from "./pages/remedios.js";
+import remedios from "./pages/remedios.js";
+import producto from "./pages/producto.js";
+
 var routes = [
   { path: "/", component: inicio},
   { path: "/login", component: LoginPage },
@@ -14,6 +16,8 @@ var routes = [
   { path: "/carrito", component: carrito },
   { path: "/medicinas", component: medicinas },
   { path: "/remedios", component: remedios },
+  { path: "/producto", component: producto },
+
 
 
   
