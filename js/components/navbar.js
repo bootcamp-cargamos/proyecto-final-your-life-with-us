@@ -1,12 +1,10 @@
 import STORAGE from "../storage.js";
-
 export default Vue.component("navbar", {
   props: [],
   data: function () {
     return {
       username: "",
       password: "",
-      isLogged: false,
     };
   },
   methods: {
@@ -14,22 +12,25 @@ export default Vue.component("navbar", {
       this.$router.push("/");
     },
     goRegister() {
+      // Redirige al usuario al listado de productos
       this.$router.push("register");
     },
     logout() {
+      // Eliminamos el token de sesión
       STORAGE.remove("token");
       this.$router.push("/");
     },
   },
   mounted() {},
   created: function () {
+    // Validamos el cambio en el Local Storage
     setInterval(() => {
       this.isLogged = !(STORAGE.get("token") == null);
     }, 1000);
   },
   template: `
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container px-5">
+        <div class="container-fluid px-5">
           <a href="/index.html" class="navbar-brand">
             <h5 class="">YourLifeWithUs</h5>
           </a>
@@ -108,9 +109,9 @@ export default Vue.component("navbar", {
           </div>
   
           <div class="d-flex">
-              <a href="pages/login.html">
-                <button class="btn btn-outline-secondary">              
-                <i class="bi bi-person-fill"></i>
+              <a href="#" >
+                <button class="btn btn-outline-secondary" @click="logout">              
+                CERRAR SESIÓN
               </button>
           </a>
 
