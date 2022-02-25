@@ -51,7 +51,9 @@ export default Vue.component("navbar", {
           <h5 class="">YourLifeWithUs</h5>
         </a>
         <a @click="goInicio"class="navbar-brand">
+        <abbr title="Deja tu VIDA con nosotros, la cuidaremos">
           <img src="/images/logo.png" alt="..." width="100" />
+        </abbr>
         </a>
         <!--TOGGLER (BARRITAS MOBILE)-->
         <button
@@ -73,7 +75,7 @@ export default Vue.component("navbar", {
               <a @click="goInicio" class="nav-link active">Inicio</a>
             </li>
             <li class="nav-item">
-              <a @click="goMedicinas" class="nav-link">Medicina farmacéutica</a>
+              <a @click="goMedicinas" class="nav-link">Medicinas</a>
             </li>
             <li class="nav-item">
               <a @click="goRemedios" class="nav-link">Medicina Natural y Tradicional</a>
@@ -85,19 +87,23 @@ export default Vue.component("navbar", {
         </div>
         <!--LISTA DE ITEMS-->
         <div class="d-flex">
+        <abbr title="Ven y observa tu carrito de Compras ¡Pulsa Aqui!">
           <a @click="goCarrito">
             <button id="btn_cart" class="btn btn-outline-secondary mx-4">
               <i class="bi bi-cart-fill"></i>
             </button>
           </a>
+          </abbr>
         </div>
   
         <div class="d-flex">
+        <abbr title="Aún no te has unido a nuestra Página que esperas ¡Pulsa Aqui!">
                 <a @click="goLogin">
                 <button class="btn btn-outline-secondary">
                   <i class="bi bi-person-fill"></i>
                 </button>
               </a>
+              </abbr>
             </div>
 
           </div>
