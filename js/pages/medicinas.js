@@ -1,81 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+import CLIENT from "../api/client.js";
+import STORAGE from "../storage.js";
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/33806c60ba.js" crossorigin="anonymous"></script>
-    <title> Tienda YourLifeWithUs</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
+export default Vue.component("medicinas", {
+  data:
+    function () {
+      return {
+        email: '',
+        username: '',
+        password: '',
+      };
+    },
+  methods: {
+    goLogin() {
+      this.$router.push("/");
+    },
+    DoSingnUp: async function () {
+      let vm = this;
+      try {
+        const response = await CLIENT.post('http://silabuz-api-project.herokuapp.com/authentication/sign-up/', {
+          email: this.email,
+          username: this.username,
+          password: this.password,
 
-<body>
-        <!--NAVBAR-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-          <div class="container px-5">
-            <!--LOGO-->
-            <a href="/index.html" class="navbar-brand">
-              <h5 class="">YourLifeWithUs</h5>
-            </a>
-            <a href="/index.html" class="navbar-brand">
-              <img src="/images/logo.png" alt="..." width="100" />
-            </a>
-            <!--TOGGLER (BARRITAS MOBILE)-->
-            <button
-              class="navbar-toggler"
-              role="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbar_menu"
-              aria-controls="navbar_menu"
-              aria-expanded="false"
-              aria-label="Toggle"
-            >
-              <span class="navbar-toggler-icon"> </span>
-            </button>
-    
-            <!--MENU DE NAVEGACION-->
-            <div class="navbar-collapse collapse" id="navbar_menu">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a href="../index.html" class="nav-link active">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a href="tienda.html" class="nav-link">Medicamentos</a>
-                </li>
-                <li class="nav-item">
-                  <a href="tienda.html" class="nav-link">Remedios</a>
-                </li>
-                <li class="nav-item">
-                  <a href="/pages/contact.html" class="nav-link">Contactanos</a>
-                </li>
-              </ul>
-            </div>
-            <!--LISTA DE ITEMS-->
-            <div class="d-flex">
-              <a href="/pages/compra.html">
-                <button id="btn_cart" class="btn btn-outline-secondary mx-4">
-                  <i class="bi bi-cart-fill"></i>
-                  <span class="badge rounded-pill bg-secondary ms-1">0</span>
-                </button>
-              </a>
-            </div>
-    
-            <!--INICIAR SESIÓN-->
-            <div class="d-flex">
-              <a href="login.html">
-                <button class="btn btn-outline-secondary">
-                  <i class="bi bi-person-fill"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </nav>
-    
-    
-        <!--HEADER-->
+        });
+        STORAGE.push("token", response.token);
+        vm.$router.push("/");
+      } catch (e) {
+        console.warn(e);
+        alert("Error al registrarse");
+      }
+    },
+  },
+  created: function () {
+    const is_logged = !(STORAGE.get("token") == null);
+    if (is_logged) {
+      this.$router.push("/");
+    }
+  },
+  template: `
+        <main>
         <header>
                 <img src="/images/banner.jpg" alt="..." class="bg_image" style="width: 100%;opacity: 0.50;">
                 <div class="d-flex h-100 flex-column align-items-center justify-content-center banner" style="height: 50vh;">
@@ -88,13 +51,9 @@
                   </p>
                 </div>
         </header>
-        <br>
-
-        <!--CONTENIDO-->
-        <main>
             <!--PRODUCTOS-->
             <div class="container card py-2 my-5" style="max-width: 80%">
-                <p class="h3 text-center py-4">Todos nuestros artículos:</p>
+                <p class="h3 text-center py-4">Todos nuestras medicinas:</p>
 
                 <!--ARTÍCULOS-->
                 <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center">
@@ -208,25 +167,5 @@
                       </div>
                   </div>
         </main>
-
-
-    
-
-
-
-
-
-
-    <!--PIE DE PAGINA-->
-    <footer class="bg-dark py-5">
-        <div class="container text-white">
-          <p class="text-center m-0">Copyright &copy; 2022</p>
-        </div>
-      </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
-</body>
-</html>
+    `,
+});
