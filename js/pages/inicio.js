@@ -119,7 +119,7 @@ export default Vue.component("LoginPage", {
         </div>
     </section>
     <section class="container mt-5">
-            <h2 class="ms-4">Medicamentos </h2>
+            <h2 class="ms-4">Medicina farmacéutica </h2>
             <div class="scroll_horizontal border border-1 mb-5">
                 <div class="me-3">
                     <a href="pages/producto.html"><img src="https://picsum.photos/200?random=2" /></a>
@@ -180,7 +180,7 @@ export default Vue.component("LoginPage", {
             </div>
 
 
-            <h2 class="ms-4 mt-4">Remedios</h2>
+            <h2 class="ms-4 mt-4">Medicina Natural y Tradicional</h2>
             <div class="scroll_horizontal border border-1 mb-4">
                 <div class="me-4">
                     <a href="pages/producto.html"><img src="https://picsum.photos/200?random=1" /></a>

@@ -73,10 +73,10 @@ export default Vue.component("navbar", {
               <a @click="goInicio" class="nav-link active">Inicio</a>
             </li>
             <li class="nav-item">
-              <a @click="goMedicinas" class="nav-link">Medicamentos</a>
+              <a @click="goMedicinas" class="nav-link">Medicina farmacéutica</a>
             </li>
             <li class="nav-item">
-              <a @click="goRemedios" class="nav-link">Remedios</a>
+              <a @click="goRemedios" class="nav-link">Medicina Natural y Tradicional</a>
             </li>
             <li class="nav-item">
               <a @click="goContactanos" class="nav-link">Contactanos</a>

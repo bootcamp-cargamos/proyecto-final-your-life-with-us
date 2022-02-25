@@ -56,7 +56,7 @@ export default Vue.component("remedios", {
         </header>
             <!--PRODUCTOS-->
             <div class="container card py-2 my-5" style="max-width: 80%">
-                <p class="h3 text-center py-4">Todos nuestros remedios:</p>
+                <p class="h3 text-center py-4">Todas nuestras Medicina Natural y Traditional:</p>
 
                 <!--ARTÍCULOS-->
                 <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center">
