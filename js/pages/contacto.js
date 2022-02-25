@@ -38,6 +38,7 @@ export default Vue.component("Contacto", {
     }
   },
   template: `
+  <main>
   <section>
   <header>
         <img src="/images/banner.jpg" alt="..." class="bg_image" style="width: 100%;opacity: 0.50;">
@@ -52,32 +53,27 @@ export default Vue.component("Contacto", {
         </div>
     </header>
     <br>
-        <div class="container mt-2  d-flex flex-column flex-md-row justify-content-center">
+        <div class="container mt-2  d-flex flex-column flex-md-row justify-content-center my-5 py-5">
             <div class="col-12 col-lg-6" id="caja">
                 <h3>CONTACTANOS</h3>
-                <div class="d-flex mt-3">
-                    <img src="../images/telefono.png" alt="..." width="80" height="80">
-                    <h3 class="align-self-center mx-4">+502 12345678</h3>
-                </div>
-
                 <div class="d-flex mt-5">
                     <img src="../images/whatsapp.png" alt="..." width="60" height="60">
-                    <h3 class="align-self-center mx-5">+502 12345678</h3>
+                    <h3 class="align-self-center mx-5">+502 55350144</h3>
                 </div>
 
                 <div class="d-flex mt-5">
                     <img src="../images/gmail-logo.png" alt="..." width="60" height="50">
-                    <h3 class="align-self-center mx-5">example@email.com</h3>
+                    <h3 class="align-self-center mx-5">educaylwu@gmail.com</h3>
                 </div>
 
                 <div class="d-flex mt-5">
                     <img src="../images/Facebook-Logo-Square-768x768.png" alt="..." width="60" height="60">
-                    <h3 class="align-self-center mx-5">example@facebook.com</h3>
+                    <h3 class="align-self-center mx-5">YourLifeWithUs</h3>
                 </div>
 
                 <div class="d-flex mt-5 mb-3">
                     <img src="../images/twitter.png" alt="..." width="60" height="60">
-                    <h3 class="align-self-center mx-5">@example.com</h3>
+                    <h3 class="align-self-center mx-5">@yourlifewithus_educa</h3>
                 </div>
 
             </div>
@@ -116,26 +112,19 @@ export default Vue.component("Contacto", {
                     </form>
                 </div>
                 <br>
-                <div class="d-flex">
-                    <div class="d-flex mt-2 flex-column justify-content-center">
-                        <h3>RESEÑAS</h3>
-                        <img src="../images/grafica.png" alt="..." width="400" height="400">
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-center mx-5">
-                        <button class="btn btn-danger mt-5 mx-3 " type="submit"><i
-                                class="bi bi-emoji-neutral fs-1"></i></button>
-                        <button class="btn btn-warning mt-2 mx-3 bg-orange" type="submit"><i
-                                class="bi bi-emoji-smile fs-1"></i></button>
-                        <button class="btn btn-info mt-2 mx-3 bg-purple" type="submit"><i
-                                class="bi bi-emoji-sunglasses fs-1"></i></i></button>
-                        <button class="btn btn-secondary mt-2 mx-3 bg-green" type="submit"><i
-                                class="bi bi-emoji-heart-eyes fs-1"></i></button>
-
-                    </div>
-                </div>
-
             </div>
     </section>
+    <div>
+    <h3 class="text-center">¡Encuentranos!</h3>
+    <div class="container card my-5 h-100">
+      <p class="px-3 pt-4">Nuestra tienda fisica se encuentra en el Centro comercial Eskala Roosevelt, local 2111.</p>
+      <p class="px-3">¡Te esperamos! Nos encontramos en el segundo nivel.</p>
+      <div class="d-flex justify-content-evenly align-items-center pb-5">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.3384660649117!2d-90.5845770851724!3d14.636718480114569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a03fe38529ad%3A0x81d09e77a597d82!2sEskala%20Roosevelt!5e0!3m2!1ses-419!2sgt!4v1645828448008!5m2!1ses-419!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <img src="/images/direccion.png" alt="comercial" width="600px" height="450px">
+      </div>
+    </div>
+    </div>
+    </main>
       `,
 });

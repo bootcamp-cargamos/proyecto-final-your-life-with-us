@@ -14,6 +14,9 @@ export default Vue.component("LoginPage", {
     goLogin() {
       this.$router.push("/");
     },
+    goProducto() {
+      this.$router.push("/producto");
+    },
     DoSingnUp: async function () {
       let vm = this;
       try {
@@ -120,125 +123,67 @@ export default Vue.component("LoginPage", {
     </section>
     <section class="container mt-5">
             <h2 class="ms-4">Medicinas </h2>
-            <div class="scroll_horizontal border border-1 mb-5">
-                <div class="me-3">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=2" /></a>
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para
-                        expendio y uso industrial o clínico.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-3">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=2" /></a>
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para
-                        expendio y uso industrial o clínico.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-3">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=2" /></a>
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para
-                        expendio y uso industrial o clínico.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-3">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=2" /></a>
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para
-                        expendio y uso industrial o clínico.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-3">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=2" /></a>
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para
-                        expendio y uso industrial o clínico.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-3">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=2" /></a>
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para
-                        expendio y uso industrial o clínico.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-3">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=2" /></a>
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para
-                        expendio y uso industrial o clínico.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-3">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=2" /></a>
-                    <p>Un medicamento es uno o más fármacos integrados en una forma farmacéutica, presentado para
-                        expendio y uso industrial o clínico.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-            </div>
+            <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center scroll_horizontal border h-100">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          class="card-img-top" src="/images/tabcin.jpg" alt="...">
+                            <div class="card-body">
+                                <h4 id="name" class="fw-folder text-center">
+                                  Tabcin Extra Fuerte
+                                </h4>
+                                <span id="price">$5.00</span>
+                              </div>
+
+                            <div class="card-footer border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a @click="goProducto">
+                                      <button class="btn btn-outline-dark">Más detalles</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-0 bg-transparent">
+                              <div class="text-center">
+                                <a href="#">
+                                  <button class="btn btn-outline-dark">Agregar al carrito</button>
+                                </a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
 
 
             <h2 class="ms-4 mt-4">Medicina Natural y Tradicional</h2>
-            <div class="scroll_horizontal border border-1 mb-4">
-                <div class="me-4">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=1" /></a>
-                    <p>Son parte importante de la cultura, no solo se constituyen como un importante sector de atención
-                        informal de salud.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-4">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=1" /></a>
-                    <p>Son parte importante de la cultura, no solo se constituyen como un importante sector de atención
-                        informal de salud.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-4">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=1" /></a>
-                    <p>Son parte importante de la cultura, no solo se constituyen como un importante sector de atención
-                        informal de salud.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-4">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=1" /></a>
-                    <p>Son parte importante de la cultura, no solo se constituyen como un importante sector de atención
-                        informal de salud.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-4">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=1" /></a>
-                    <p>Son parte importante de la cultura, no solo se constituyen como un importante sector de atención
-                        informal de salud.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-4">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=1" /></a>
-                    <p>Son parte importante de la cultura, no solo se constituyen como un importante sector de atención
-                        informal de salud.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-4">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=1" /></a>
-                    <p>Son parte importante de la cultura, no solo se constituyen como un importante sector de atención
-                        informal de salud.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-                <div class="me-4">
-                    <a href="pages/producto.html"><img src="https://picsum.photos/200?random=1" /></a>
-                    <p>Son parte importante de la cultura, no solo se constituyen como un importante sector de atención
-                        informal de salud.</p>
-                    <a href="pages/producto.html" target="_blank"><button class="btn btn-outline-dark rounded"
-                            type="button">Más detalles</button></a>
-                </div>
-            </div>
+            <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center scroll_horizontal border h-100">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          class="card-img-top" src="/images/tabcin.jpg" alt="...">
+                            <div class="card-body">
+                                <h4 id="name" class="fw-folder text-center">
+                                  Tabcin Extra Fuerte
+                                </h4>
+                                <span id="price">$5.00</span>
+                              </div>
+
+                            <div class="card-footer border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <a @click="goProducto">
+                                      <button class="btn btn-outline-dark">Más detalles</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-0 bg-transparent">
+                              <div class="text-center">
+                                <a href="#">
+                                  <button class="btn btn-outline-dark">Agregar al carrito</button>
+                                </a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
     </section>
     <section class="mt-5 mb-5">
       <div class="container">
@@ -286,7 +231,7 @@ export default Vue.component("LoginPage", {
           aledañas, y el monto por entrega al resto de ciudades es de $4.
         </p>
         <div class="d-flex flex-row justify-content-center mb-3">
-          <img src="/images/repartidor.png" alt="..." width="600" height="350" />
+          <img src="/images/repartidor.png" alt="..." width="500" height="350" />
         </div>
       </article>
     </div>

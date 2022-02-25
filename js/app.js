@@ -7,6 +7,8 @@ import carrito from "./pages/carrito.js";
 import medicinas from "./pages/medicinas.js";
 import remedios from "./pages/remedios.js";
 import producto from "./pages/producto.js";
+import Custom_footer from "./components/Custom_footer.js";
+
 
 var routes = [
   { path: "/", component: inicio},
@@ -20,7 +22,7 @@ var routes = [
 
 
 
-  
+
 
 ];
 var router = new VueRouter({
@@ -30,6 +32,6 @@ var router = new VueRouter({
 });
 var app = new Vue({
   el: "#app",
-  components: {Navbar},
+  components: {Navbar,Custom_footer},
   router: router,
 });
