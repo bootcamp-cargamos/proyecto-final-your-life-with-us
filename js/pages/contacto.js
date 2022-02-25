@@ -67,13 +67,18 @@ export default Vue.component("Contacto", {
                 </div>
 
                 <div class="d-flex mt-5">
-                    <img src="../images/Facebook-Logo-Square-768x768.png" alt="..." width="60" height="60">
-                    <h3 class="align-self-center mx-5">YourLifeWithUs</h3>
+                    <a href="https://www.facebook.com/" class="link-dark text-decoration-none"><img src="../images/Facebook-Logo-Square-768x768.png" alt="..." width="60" height="60"></a>
+                    <a href="https://www.facebook.com/" class="link-dark text-decoration-none"><h3 class="align-self-center mx-5">YourLifeWithUs</h3></a>
                 </div>
 
                 <div class="d-flex mt-5 mb-3">
-                    <img src="../images/twitter.png" alt="..." width="60" height="60">
-                    <h3 class="align-self-center mx-5">@yourlifewithus_educa</h3>
+                    <a href="https://twitter.com/" class="link-dark text-decoration-none"><img src="../images/twitter.png" alt="..." width="60" height="60"></a>
+                    <a href="https://twitter.com/" class="link-dark text-decoration-none"><h3 class="align-self-center mx-5">@yourlifewithus_educa</h3></a>
+                </div>
+
+                <div class="d-flex mt-5 mb-3">
+                  <a href="https://instagram.com/" class="link-dark text-decoration-none"><img src="../images/instagram.png" alt="..." width="60" height="60"></a>
+                  <a href="https://instagram.com/" class="link-dark text-decoration-none"><h3 class="align-self-center mx-5">@yourlifewithus__edu</h3></a>
                 </div>
 
             </div>

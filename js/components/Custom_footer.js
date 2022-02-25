@@ -35,23 +35,48 @@ export default Vue.component("Custom_footer", {
       },
     },
     template: `
-    <footer class="bg-info text-dark py-5">
-        <div class="d-flex justify-content-evenly">
-
+    <footer class="bg-dark bg-gradient text-white py-5 ">
+        <div class="container d-flex justify-content-evenly">
           <div class="container">
               <p class="fw-bolder">¿Quieres ver nuestros productos? ¡Aquí están!</p>
-              <ul class="text-dark">
-                <li><a @click="goMedicinas" class="link-dark text-decoration-none">Nuestras medicinas</a></li>
-                <li><a @click="goRemedios" class="link-dark text-decoration-none">Nuestras medicinas naturales</a></li>
+              <br>
+              <br>
+              <ul class="text-white">
+                <li><a @click="goMedicinas" class="text-white text-decoration-none">Nuestras medicinas</a></li>
+                <br>
+                <li><a @click="goRemedios" class="text-white text-decoration-none">Nuestras medicinas naturales</a></li>
               </ul>
           </div>
 
           <div class="container">
             <p class="text-center m-0">Copyright &copy; 2022</p>
           </div>
-          
+
           <div class="container">
             <p>Nuestras redes sociales:</p>
+            <div class="d-flex">
+                    <img src="../images/whatsapp.png" alt="..." width="30" height="30">
+                    <p class="align-self-center mx-5">+502 55350144</p>
+            </div>
+            <div class="d-flex">
+                    <img src="../images/gmail-logo.png" alt="..." width="30" height="30">
+                    <p class="align-self-center mx-5">educaylwu@gmail.com</p>
+            </div>
+
+            <div class="d-flex">
+                    <a href="https://www.facebook.com/" class="text-white text-decoration-none"><img src="../images/Facebook-Logo-Square-768x768.png" alt="..." width="30" height="30"></a>
+                    <a href="https://www.facebook.com/" class="text-white text-decoration-none"><p class="align-self-center mx-5">YourLifeWithUs</p></a>
+            </div>
+
+            <div class="d-flex">
+                    <a href="https://twitter.com/" class="text-white text-decoration-none"><img src="../images/twitter.png" alt="..." width="30" height="30"></a>
+                    <a href="https://twitter.com/" class="text-white text-decoration-none"><p class="align-self-center mx-5">@yourlifewithus_educa</p></a>
+            </div>
+
+            <div class="d-flex">
+                  <a href="https://instagram.com/" class="text-white text-decoration-none"><img src="../images/instagram.png" alt="..." width="30" height="30"></a>
+                  <a href="https://instagram.com/" class="text-white text-decoration-none"><p class="align-self-center mx-5">@yourlifewithus__edu</p></a>
+            </div>
           </div>
         </div>
     </footer>
