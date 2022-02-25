@@ -52,11 +52,11 @@ export default Vue.component("register-page", {
                   <label for="name" class="form-label">Nombres</label>
                    <input type="text" class="form-control" id="name" v-model="username" placeholder="Peter Bronson"
                        aria-describedby="emailHelp" style="width: 500px;" required>
-                  <label for="username" class="form-label">Email</label>
+                  <label for="username" class="form-label mt-3">Email</label>
                    <input type="text" class="form-control" id="username" v-model="email" placeholder="example@mail.com"
                        aria-describedby="emailHelp" style="width: 500px;" required>
-                   <label for="password">Contraseña</label>
-                   <input type="password" class="form-control mb-3" id="password" v-model="password" required>
+                   <label for="password" class="form-label mt-3">Contraseña</label>
+                   <input type="password" class="form-control mb-3" id="password" v-model="password" placeholder="*****" required>
 
                    <div class="col-12 d-flex justify-content-center mt-4 mb-5">
                           <button class="btn btn-primary rounded-pill" type="submit" @click.prevent="DoSingnUp"style="width: 300px;height: 150;">Registrarse</button>
