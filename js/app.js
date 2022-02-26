@@ -19,7 +19,7 @@ var routes = [
   { path: "/carrito", component: carrito },
   { path: "/medicinas", component: medicinas },
   { path: "/remedios", component: remedios },
-  { path: "/producto/:id", component: producto },
+  { path: "/producto", component: producto },
 
 
 

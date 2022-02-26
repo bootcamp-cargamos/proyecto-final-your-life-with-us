@@ -130,7 +130,7 @@ export default Vue.component("LoginPage", {
     <section class="container mt-5">
             <h2 class="ms-4">Algunos de nuestros productos: </h2>
             <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center border px-2 py-5">
-              <div v-for="product in this.products">
+              <div v-for="product in this.products" class="mb-2">
                 <card :product="product" :key="product.id"></card>
               </div>  
             </div>

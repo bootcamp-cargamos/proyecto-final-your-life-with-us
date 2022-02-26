@@ -5,7 +5,7 @@ export default Vue.component("medicinas", {
   data:
     function () {
       return {
-        email: '',
+        products:[],
         username: '',
         password: '',
       };
@@ -39,6 +39,11 @@ export default Vue.component("medicinas", {
     if (is_logged) {
       this.$router.push("/");
     }
+    fetch("https://yourlifewithus.herokuapp.com/api/get_all_products/10")
+    .then(response => response.json())
+    .then(data => {
+        this.products=data.data
+    });
   },
   template: `
         <main>
@@ -60,9 +65,9 @@ export default Vue.component("medicinas", {
 
                 <!--ARTÍCULOS-->
                 <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center">
-                <card></card>
-                      </div>
-                  </div>
+                <card :product="product"></card>
+                </div>
+            </div>
         </main>
     `,
 });
