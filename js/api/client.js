@@ -1,4 +1,4 @@
-const URL = "http://silabuz-api-project.herokuapp.com";
+const URL = "https://yourlifewithus.herokuapp.com/api/get_all_products";
 
 const CLIENT = {
   get: async (path, headers = {}) => {

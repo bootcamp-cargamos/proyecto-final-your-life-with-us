@@ -5,9 +5,7 @@ export default Vue.component("producto", {
   data:
     function () {
       return {
-        email: '',
-        username: '',
-        password: '',
+        product:{},
       };
     },
   methods: {
@@ -36,9 +34,16 @@ export default Vue.component("producto", {
     if (is_logged) {
       this.$router.push("/");
     }
+    const ID = this.$route.params.id;
+    fetch(`https://yourlifewithus.herokuapp.com/api/products/${ID}`)
+    .then(response => response.json())
+    .then(data => {
+        this.product=data.data
+    });
+   console.log(ID)
   },
   template: `
-        <section class="py-2 me-3">
+                <section class="py-2 me-3">
             <div class="container">
               <div class="card mb-3">
                 <div class="row g-0">

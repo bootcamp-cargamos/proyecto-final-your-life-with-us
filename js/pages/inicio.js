@@ -5,6 +5,7 @@ export default Vue.component("LoginPage", {
   data:
     function () {
       return {
+        products:[],
         email: '',
         username: '',
         password: '',
@@ -39,6 +40,11 @@ export default Vue.component("LoginPage", {
     if (is_logged) {
       this.$router.push("/");
     }
+    fetch("https://yourlifewithus.herokuapp.com/api/get_all_products/20")
+    .then(response => response.json())
+    .then(data => {
+        this.products=data.data
+    });
   },
   template: `
     <section>
@@ -122,68 +128,13 @@ export default Vue.component("LoginPage", {
         </div>
     </section>
     <section class="container mt-5">
-            <h2 class="ms-4">Medicinas </h2>
-            <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center scroll_horizontal border h-100">
-                    <div class="col">
-                      <div class="card">
-                        <img
-                          class="card-img-top" src="/images/tabcin.jpg" alt="...">
-                            <div class="card-body">
-                                <h4 id="name" class="fw-folder text-center">
-                                  Tabcin Extra Fuerte
-                                </h4>
-                                <span id="price">$5.00</span>
-                              </div>
+            <h2 class="ms-4">Algunos de nuestros productos: </h2>
+            <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center border px-2 py-5">
+              <div v-for="product in this.products">
+                <card :product="product" :key="product.id"></card>
+              </div>  
+            </div>
 
-                            <div class="card-footer border-top-0 bg-transparent">
-                                <div class="text-center">
-                                    <a @click="goProducto">
-                                      <button class="btn btn-outline-dark">Más detalles</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-footer border-top-0 bg-transparent">
-                              <div class="text-center">
-                                <a href="#">
-                                  <button class="btn btn-outline-dark">Agregar al carrito</button>
-                                </a>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-
-
-            <h2 class="ms-4 mt-4">Medicina Natural y Tradicional</h2>
-            <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center scroll_horizontal border h-100">
-                    <div class="col">
-                      <div class="card">
-                        <img
-                          class="card-img-top" src="/images/tabcin.jpg" alt="...">
-                            <div class="card-body">
-                                <h4 id="name" class="fw-folder text-center">
-                                  Tabcin Extra Fuerte
-                                </h4>
-                                <span id="price">$5.00</span>
-                              </div>
-
-                            <div class="card-footer border-top-0 bg-transparent">
-                                <div class="text-center">
-                                    <a @click="goProducto">
-                                      <button class="btn btn-outline-dark">Más detalles</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-footer border-top-0 bg-transparent">
-                              <div class="text-center">
-                                <a href="#">
-                                  <button class="btn btn-outline-dark">Agregar al carrito</button>
-                                </a>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
     </section>
     <section class="mt-5 mb-5">
       <div class="container">
@@ -208,30 +159,26 @@ export default Vue.component("LoginPage", {
         <h4 class="mt-4 text-center">
           ¿Cúal es nuestro metodo de envío?
         </h4>
+        <div class="d-flex justify-content-around align-items-center">
+        <div class="px-2">
         <p class="px-3 pt-1">
           El metodo de envío es una de las cosas que hacen a
-          YourLifeWithUs distinto. A pesar de ser una empresa sin tienda
-          fisica, contamos con colaboradores alrededor de los países en
-          los que estamos disponibles.
+          YourLifeWithUs distinto. A pesar de ser una empresa con tienda
+          fisica, contamos con colaboradores alrededor del pais.
         </p>
         <p class="px-3">
-          -El tiempo de entrega dependerá del país y de la ciudad en la
-          que resides. El tiempo aproximado de entrega en las Capitales de
-          los países en los que estamos es de 45 minutos, dependiendo de
+          -El tiempo de entrega dependerá de la ciudad en la
+          que resides. El tiempo aproximado de entrega en la capital es de 2 horas, dependiendo de
           la hora y lugar.
         </p>
         <p class="px-3">
-          -Ahora bien, no tenemos restricciones al momento de hacer
-          entregas fuera de las capitales. El tiempo de entrega varía
-          entre 1 a 3 horas, dependiendo del lugar y horario en el que se
-          haga la orden.
+          -El monto por compra es de Q.20.00 en las capitales y ciudades
+          aledañas.
         </p>
-        <p class="px-3">
-          -El monto por compra es de $2 en las capitales y ciudades
-          aledañas, y el monto por entrega al resto de ciudades es de $4.
-        </p>
-        <div class="d-flex flex-row justify-content-center mb-3">
-          <img src="/images/repartidor.png" alt="..." width="500" height="350" />
+      </div>
+        <div class="">
+          <img src="/images/repartidor.jpg" alt="..." width="300" height="350" />
+        </div>
         </div>
       </article>
     </div>
