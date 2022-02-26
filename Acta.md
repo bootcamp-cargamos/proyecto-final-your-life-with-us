@@ -1,1 +1,3 @@
 Como capitán de equipo doy fe que todos los integrantes trabajaron en las tareas asignadas, sin bien se puede observar una diferencia en la cantidad de commits realizados por cada uno. En el caso de Ana Pestaña, Cecilia Alonzo y Lourdes Catalán se vieron en la necesidad de utilizar un repositorio ajeno para evitar crear conflictos en el repositorio del proyecto, porque tuvieron inconvenientes cuando intentaban actualizar el estado de sus avances, sin embargo esto no influyó negativamente en la cantidad de trabajo que cada una aportó.
+Lourdes Catalán y Mailer Alonzo realizaron toda su base para la API atravez de este documento:
+https://docs.google.com/document/d/1EWiUX3RKMKBa9qnSTlTOPydAAN0eq6i-/edit?usp=sharing&ouid=104615889749622326827&rtpof=true&sd=true
